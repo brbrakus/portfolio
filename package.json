@@ -4,6 +4,7 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
+    "precommit": "lint-staged",
     "build": "NODE_PATH=./src/ webpack --config webpack.config.js",
     "start": "webpack-dev-server --open",
     "deploy": "npm run build && surge ./dist --domain bruna.surge.sh"
@@ -23,6 +24,8 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.3.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
     "node-sass": "^4.6.0",
     "prettier": "1.7.4",
     "sass-loader": "^6.0.6",
@@ -36,5 +39,8 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"]
   }
 }
