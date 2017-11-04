@@ -20,22 +20,18 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: ['babel-loader', 'eslint-loader'],
         include: [path.resolve(__dirname, './')]
       },
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: 'style-loader'
-          },
+          'style-loader',
           {
             loader: 'css-loader',
             options: { modules: true }
           },
-          {
-            loader: 'sass-loader'
-          }
+          'sass-loader'
         ]
       }
     ]
