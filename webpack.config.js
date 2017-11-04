@@ -1,4 +1,5 @@
 const path = require('path');
+const styleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
@@ -35,5 +36,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [new styleLintPlugin()]
 };

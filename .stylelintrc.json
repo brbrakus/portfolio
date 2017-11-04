@@ -1,0 +1,63 @@
+{
+  "extends": "stylelint-config-prettier",
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "order/properties-order": [
+      [
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "display",
+            "flex-flow",
+            "height",
+            "width",
+            "padding",
+            "padding-top",
+            "padding-left",
+            "padding-bottom",
+            "padding-right",
+            "margin",
+            "margin-top",
+            "margin-left",
+            "margin-bottom",
+            "margin-right"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "position",
+            "top",
+            "left",
+            "bottom",
+            "right",
+            "background",
+            "background-color"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "justify-content",
+            "align-items",
+            "vertical-align",
+            "self-justify",
+            "self-align"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "font-face",
+            "font",
+            "font-size",
+            "font-weight",
+            "color",
+            "border"
+          ]
+        }
+      ],
+      { "unspecified": "bottom" }
+    ]
+  }
+}
