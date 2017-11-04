@@ -1,0 +1,9 @@
+$black: #050505;
+
+h1:global(.primary) {
+  color: $black;
+}
+
+h1:global(.secondary) {
+  color: purple;
+}
