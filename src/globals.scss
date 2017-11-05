@@ -1,9 +1,72 @@
-$black: #050505;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:400,500,700');
 
-h1:global(.primary) {
-  color: $black;
+//colors//
+$black: #021e29;
+$white: #f2f2f2;
+$purple: #93278f;
+$blue: #0e9daf;
+$neon-blue: #28daf6;
+
+//font weight//
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1:global(.secondary) {
-  color: purple;
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  font-size: 16px;
+}
+
+h1:global {
+  font-size: 3rem;
+
+  color: $black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2:global(.primary) {
+  font-size: 2.25rem;
+  font-weight: $bold;
+
+  color: $blue;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h2:global(.secondary) {
+  font-size: 2.25rem;
+  font-weight: $bold;
+
+  color: $purple;
+  text-align: center;
+}
+
+h3:global(.primary) {
+  font-size: 1.5rem;
+  font-weight: $bold;
+
+  color: $black;
+  font-family: 'Ubuntu, sans-serif';
+}
+
+h3:global(.secondary) {
+  font-size: 1.5rem;
+  font-weight: $bold;
+
+  color: $white;
 }
