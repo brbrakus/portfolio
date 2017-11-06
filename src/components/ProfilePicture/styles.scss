@@ -1,0 +1,9 @@
+@import "theme/spacings.scss";
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin: $spc-m;
+
+  border-radius: 100%;
+}
