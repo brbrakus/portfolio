@@ -1,9 +1,48 @@
-$black: #050505;
+@import 'theme/typography.scss';
+@import 'theme/colors.scss';
 
-h1:global(.primary) {
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:global(#app) {
+  font-size: 16px !important;
+  box-sizing: border-box;
+  font-family: $fontRegular;
+
+  * {
+    padding: 0;
+    margin: 0;
+
+    &,
+    &:before,
+    &:after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fontHeading;
+}
+
+h1 {
+  font-size: 3rem;
   color: $black;
 }
 
-h1:global(.secondary) {
-  color: purple;
+h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
