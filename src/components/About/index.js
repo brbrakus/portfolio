@@ -1,6 +1,6 @@
 import { h } from 'hyperapp';
 import ProfilePicture from 'components/ProfilePicture';
-
+import profilePicture from 'assets/profile.jpg';
 import s from './styles.scss';
 
 const Title = () => (
@@ -30,7 +30,7 @@ const Description = () => (
 const About = () => (
   <div className={s.about}>
     <Title />
-    <ProfilePicture src="#" />
+    <ProfilePicture src={profilePicture} />
     <Description />
   </div>
 );
