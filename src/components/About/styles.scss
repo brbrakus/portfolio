@@ -1,6 +1,32 @@
-.about {
-  height: 100px;
-  width: 100px;
+@import 'theme/colors.scss';
+@import 'theme/spacings.scss';
 
-  background: purple;
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+
+  height: 100%;
+  height: 100vh;
+
+  margin: 0 $spc-l;
+
+  background: $blue;
+
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+
+  text-align: center;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.left {
+  align-self: flex-start;
+  text-align: left;
 }

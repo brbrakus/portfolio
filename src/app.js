@@ -6,7 +6,6 @@ import './globals.scss';
 
 const view = () => (
   <div>
-    <h1>Hi, I'm Bruna!</h1>
     <About />
     <Work />
   </div>
