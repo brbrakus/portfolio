@@ -1,72 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:400,500,700');
-
-//colors//
-$black: #021e29;
-$white: #f2f2f2;
-$purple: #93278f;
-$blue: #0e9daf;
-$neon-blue: #28daf6;
-
-//font weight//
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
-
-*,
-html,
-body {
-  padding: 0;
-  margin: 0;
-
-  box-sizing: border-box;
-
-  font-family: 'Open Sans', sans-serif;
-}
+@import 'theme/typography.scss';
+@import 'theme/colors.scss';
 
 html,
 body {
   height: 100%;
   width: 100%;
-
-  font-size: 16px;
 }
 
-h1:global {
+:global(#app) {
+  font-size: 16px !important;
+  box-sizing: border-box;
+  font-family: $fontRegular;
+
+  * {
+    padding: 0;
+    margin: 0;
+
+    &,
+    &:before,
+    &:after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $fontHeading;
+}
+
+h1 {
   font-size: 3rem;
-
   color: $black;
-  font-family: 'Ubuntu', sans-serif;
 }
 
-h2:global(.primary) {
+h2 {
   font-size: 2.25rem;
-  font-weight: $bold;
-
-  color: $blue;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
+  font-weight: bold;
 }
 
-h2:global(.secondary) {
-  font-size: 2.25rem;
-  font-weight: $bold;
-
-  color: $purple;
-  text-align: center;
-}
-
-h3:global(.primary) {
+h3 {
   font-size: 1.5rem;
-  font-weight: $bold;
-
-  color: $black;
-  font-family: 'Ubuntu, sans-serif';
-}
-
-h3:global(.secondary) {
-  font-size: 1.5rem;
-  font-weight: $bold;
-
-  color: $white;
+  font-weight: bold;
 }
