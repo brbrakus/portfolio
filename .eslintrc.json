@@ -1,10 +1,24 @@
 {
-  "extends": "prettier",
+  "extends": [
+    "eslint-config-airbnb",
+    "eslint-config-standard-preact",
+    "prettier"
+  ],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "no-debugger": "warn",
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off"
+  },
+  "env": {
+    "browser": true
   },
   "parserOptions": {
+    "parser": "babel-eslint",
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {

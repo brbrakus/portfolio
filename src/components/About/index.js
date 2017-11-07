@@ -1,11 +1,11 @@
-import { h } from 'hyperapp';
+import { h } from 'preact';
 import ProfilePicture from 'components/ProfilePicture';
-import profilePicture from 'assets/profile.jpg';
+import images from 'assets/images';
 import s from './styles.scss';
 
 const Title = () => (
   <div>
-    <h1>Hi, I'm Bruna!</h1>
+    <h1>Hi, I{"'"}m Bruna!</h1>
     <h3 className={s.subtitle}>
       graphic & web
       <br />designer
@@ -30,7 +30,7 @@ const Description = () => (
 const About = () => (
   <div className={s.about}>
     <Title />
-    <ProfilePicture src={profilePicture} />
+    <ProfilePicture image={images.profile} />
     <Description />
   </div>
 );

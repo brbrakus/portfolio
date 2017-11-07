@@ -10,7 +10,9 @@
             "display",
             "flex-flow",
             "height",
+            "min-height",
             "width",
+            "min-width",
             "padding",
             "padding-top",
             "padding-left",
@@ -30,14 +32,13 @@
             "top",
             "left",
             "bottom",
-            "right",
-            "background",
-            "background-color"
+            "right"
           ]
         },
         {
-          "emptyLineBefore": "always",
           "properties": [
+            "background",
+            "background-color",
             "justify-content",
             "align-items",
             "vertical-align",
@@ -46,10 +47,10 @@
           ]
         },
         {
-          "emptyLineBefore": "always",
           "properties": [
             "font-face",
             "font",
+            "font-family",
             "font-size",
             "font-weight",
             "color",

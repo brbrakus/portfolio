@@ -1,14 +1,13 @@
-import { h, app } from 'hyperapp';
+import { h, render } from 'preact';
 import About from 'components/About';
 import Work from 'components/Work';
 
 import './globals.scss';
 
-const view = () => (
+render(
   <div>
     <About />
     <Work />
-  </div>
+  </div>,
+  document.getElementById('app')
 );
-
-app({ view }, document.getElementById('app'));

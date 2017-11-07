@@ -5,12 +5,9 @@
   display: flex;
   flex-flow: column nowrap;
 
-  height: 100%;
-  height: 100vh;
-
   margin: 0 $spc-l;
 
-  background: $blue;
+  background: transparent;
 
   align-items: center;
 }
