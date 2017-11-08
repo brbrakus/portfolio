@@ -1,4 +1,21 @@
 {
-  "plugins": [["transform-react-jsx", { "pragma": "h" }]],
-  "presets": [["env"]]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "chrome": 52,
+          "browsers": ["last 3 versions", "safari 7"]
+        },
+        "modules": "commonjs",
+        "loose": true
+      }
+    ],
+    "stage-1",
+    "preact"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    ["transform-react-jsx", { "pragma": "h" }]
+  ]
 }

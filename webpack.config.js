@@ -14,9 +14,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      components: path.resolve(__dirname, 'src/components/')
+      components: path.resolve(__dirname, 'src/components/'),
+      assets: path.resolve(__dirname, 'assets/')
     }
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
@@ -30,10 +32,17 @@ module.exports = {
           'style-loader',
           {
             loader: 'css-loader',
-            options: { modules: true }
+            options: {
+              module: true,
+              localIdentName: '[path][name]-[local]'
+            }
           },
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   },

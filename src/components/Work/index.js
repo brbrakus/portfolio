@@ -1,10 +1,10 @@
-import { h } from 'hyperapp';
+import { h } from 'preact';
 
 import s from './styles.scss';
 
 const Work = () => (
-  <div class={s.work}>
-    <h1>See my work</h1>
+  <div className={s.work}>
+    <h2 className={s.title}>See my work</h2>
   </div>
 );
 
