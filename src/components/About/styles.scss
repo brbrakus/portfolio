@@ -1,22 +1,45 @@
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
 
 .about {
   display: flex;
   flex-flow: column nowrap;
 
-  margin: 0 $spc-l;
+  margin: $spc-l $spc-l;
 
   background: transparent;
 
   align-items: center;
 }
 
+.title {
+  margin: 0;
+}
+
 .subtitle {
+  margin: $spc-m 0;
+
+  color: $secondary;
+
   align-self: flex-end;
   text-align: right;
 }
 
-.left {
+.heading {
+  margin: $spc-m 0;
+
+  color: $accent;
   text-align: left;
+}
+
+.description {
+  font-weight: 600;
+  color: $secondary;
+}
+
+.link {
+  color: $accent;
+  text-decoration: none;
+  text-shadow: $link-shadow;
 }
