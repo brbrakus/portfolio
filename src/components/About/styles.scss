@@ -1,22 +1,32 @@
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
 
-.about {
+.wrapper {
   display: flex;
   flex-flow: column nowrap;
 
+  height: 100%;
+  padding-top: $spc-l;
+
+  background: $secondary;
+}
+
+.title {
+  color: $light-text;
+  text-align: center;
+  text-shadow: $heading-shadow;
+}
+
+.description {
   margin: 0 $spc-l;
 
-  background: transparent;
-
-  align-items: center;
+  font-weight: 400;
+  color: $white;
 }
 
-.subtitle {
-  align-self: flex-end;
-  text-align: right;
-}
-
-.left {
-  text-align: left;
+.link {
+  color: $accent;
+  text-decoration: none;
+  text-shadow: $link-shadow;
 }

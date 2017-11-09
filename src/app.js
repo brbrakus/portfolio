@@ -1,13 +1,13 @@
 import { h, render } from 'preact';
-import About from 'components/About';
-import Work from 'components/Work';
 
+import Welcome from 'components/Welcome';
+import About from 'components/About';
 import './globals.scss';
 
 render(
   <div>
+    <Welcome />
     <About />
-    <Work />
   </div>,
   document.getElementById('app')
 );
