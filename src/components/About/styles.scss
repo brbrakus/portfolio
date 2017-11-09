@@ -2,40 +2,24 @@
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 
-.about {
-  display: flex;
-  flex-flow: column nowrap;
+.wrapper {
+  height: 100%;
+  padding-top: $spc-l;
 
-  margin: $spc-l $spc-l;
-
-  background: transparent;
-
-  align-items: center;
+  background: $secondary;
 }
 
 .title {
-  margin: 0;
-}
-
-.subtitle {
-  margin: $spc-m 0;
-
-  color: $secondary;
-
-  align-self: flex-end;
-  text-align: right;
-}
-
-.heading {
-  margin: $spc-m 0;
-
-  color: $accent;
-  text-align: left;
+  color: $light-text;
+  text-align: center;
+  text-shadow: $heading-shadow;
 }
 
 .description {
-  font-weight: 600;
-  color: $secondary;
+  margin: 0 $spc-l;
+
+  font-weight: 400;
+  color: $white;
 }
 
 .link {

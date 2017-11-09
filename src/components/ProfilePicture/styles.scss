@@ -1,10 +1,10 @@
 @import "theme/spacings.scss";
 
 .image {
-  min-height: 150px;
-  width: 150px;
+  min-height: $spc-xxl;
+  width: $spc-xxl;
 
-  margin: $spc-m;
+  margin: $spc-l;
 
   border-radius: 100%;
 }

@@ -1,6 +1,6 @@
+@import 'theme/spacings.scss';
 @import 'theme/typography.scss';
 @import 'theme/colors.scss';
-@import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 
 html,
@@ -49,7 +49,6 @@ h1 {
   font-weight: 400;
 
   color: $secondary;
-  text-align: center;
   text-shadow: $heading-shadow;
 }
 
@@ -66,7 +65,7 @@ h3 {
 
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 0.17rem;
+  letter-spacing: 0.135rem;
   text-transform: uppercase;
   text-shadow: $heading-shadow;
 }
