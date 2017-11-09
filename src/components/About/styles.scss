@@ -3,6 +3,9 @@
 @import 'theme/shadows.scss';
 
 .wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
   height: 100%;
   padding-top: $spc-l;
 
