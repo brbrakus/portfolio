@@ -1,0 +1,38 @@
+@import 'theme/colors.scss';
+@import 'theme/spacings.scss';
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+
+  height: 9.375rem; //150px
+
+  padding: $spc-m 0;
+  margin-top: $spc-xxl;
+
+  background: $secondary;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  flex-flow: row nowrap;
+
+  width: 12.5rem; //200px
+
+  margin: 0 0 $spc-s 0;
+
+  justify-content: space-around;
+}
+
+.icon {
+  width: 2rem; //32px
+  fill: $white;
+  cursor: pointer;
+}
+
+.copyright {
+  color: $white;
+}

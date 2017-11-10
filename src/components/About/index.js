@@ -10,10 +10,7 @@ const Description = () => (
       <br />
       <br />Also going graphic design and trying to make your brand stick out.
       <br />
-      <br />To find out more{' '}
-      <a href="/" className={s.link}>
-        see my CV.
-      </a>
+      <br />To find out more <a href="/">see my CV.</a>
     </p>
   </div>
 );
