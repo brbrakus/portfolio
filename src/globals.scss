@@ -69,3 +69,18 @@ h3 {
   text-transform: uppercase;
   text-shadow: $heading-shadow;
 }
+
+h4 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+
+  color: $white;
+  text-align: center;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  text-shadow: $link-shadow;
+  cursor: pointer;
+}
