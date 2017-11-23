@@ -1,0 +1,31 @@
+@import 'theme/colors.scss';
+@import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
+
+.work {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: $spc-l;
+  margin: $spc-l 0;
+
+  background: $secondary;
+}
+
+.title {
+  color: $light-text;
+  text-align: center;
+}
+
+.link {
+  color: $white;
+}
+
+h3 {
+  color: $light-text;
+}
+
+.example {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: $spc-l 0;
+}
