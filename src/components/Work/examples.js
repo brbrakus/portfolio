@@ -1,10 +1,9 @@
+import images from 'assets/images';
+
 export default [
   {
-    name: 'ADOmiš',
-    description: 'Static web site for Astronomical Society of Omiš.'
-  },
-  {
-    name: 'Refužo',
-    description: 'Brend design for helthy food grocery stores.'
+    name: 'refuzo',
+    link: '/',
+    image: images.refuzo
   }
 ];

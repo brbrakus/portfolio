@@ -5,27 +5,17 @@
 .work {
   display: flex;
   flex-flow: column nowrap;
-  padding: $spc-l;
-  margin: $spc-l 0;
+  padding: $spc-l 0;
 
-  background: $secondary;
+  background: $white;
 }
 
 .title {
-  color: $light-text;
+  color: $primary;
   text-align: center;
 }
 
-.link {
-  color: $white;
-}
-
-h3 {
-  color: $light-text;
-}
-
-.example {
-  display: flex;
-  flex-flow: column nowrap;
-  margin: $spc-l 0;
+.exampleImage {
+  width: 100vw;
+  padding: $spc-l 0;
 }

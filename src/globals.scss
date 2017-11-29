@@ -48,7 +48,7 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
 
-  color: $secondary;
+  color: $white;
   text-shadow: $heading-shadow;
 }
 
@@ -78,7 +78,9 @@ h4 {
 }
 
 a {
+  font-weight: bold;
   color: $accent;
+
   text-decoration: none;
   text-shadow: $link-shadow;
   cursor: pointer;
