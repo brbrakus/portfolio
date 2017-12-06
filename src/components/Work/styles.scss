@@ -5,9 +5,12 @@
 .work {
   display: flex;
   flex-flow: column nowrap;
+
   padding: $spc-l 0;
 
   background: $white;
+  align-items: center;
+
 }
 
 .title {
@@ -16,6 +19,7 @@
 }
 
 .exampleImage {
-  width: 100vw;
+  width: 95%;
+  width: 95vw;
   padding: $spc-l 0;
 }
