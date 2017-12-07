@@ -23,7 +23,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div className={s.contact}>
-        <h2 className={s.title}>Contact me</h2>
+        <h3 className={s.title}>Contact me</h3>
         <form className={s.form}>
           <input
             className={s.input}
@@ -48,7 +48,7 @@ export default class Contact extends Component {
           />
 
           <button className={s.button} onClick={this.onSubmit}>
-            Submit
+            Say hi!
           </button>
         </form>
       </div>

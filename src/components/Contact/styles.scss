@@ -9,16 +9,16 @@
   width: 100%;
   width: 100vw;
 
-  padding: $spc-l 0;
+  padding: $spc-l 0 $spc-xxl 0;
 
   background: $secondary;
-
   align-items: center;
 }
 
 .title {
-  color: $accent;
+  color: $white;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .form {
@@ -27,10 +27,12 @@
 
   width: 80%;
   width: 80vw;
+
+  margin-top: $spc-m;
 }
 
 .input {
-  height: 40px;
+  height: 50px;
   margin-bottom: $spc-s;
 
   background: $light-text;
@@ -38,6 +40,8 @@
   font-size: 1rem;
   text-align: center;
 
+  border-color: $secondary;
+  border-radius: 7px;
 }
 
 .textarea {
@@ -48,11 +52,15 @@
 
   background: $light-text;
   font-size: 1rem;
-  text-align: center;
 
+  text-align: center;
+  border-radius: 7px;
+  border-color: $secondary;
 }
 
 .button {
+  height: 50px;
+
   padding: $spc-s;
 
   background: $primary;
@@ -61,4 +69,5 @@
 
   color: $white;
   border-color: $primary;
+  border-radius: 7px;
 }
