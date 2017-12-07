@@ -1,0 +1,64 @@
+@import 'theme/colors.scss';
+@import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  width: 100vw;
+
+  padding: $spc-l 0;
+
+  background: $secondary;
+
+  align-items: center;
+}
+
+.title {
+  color: $accent;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 80%;
+  width: 80vw;
+}
+
+.input {
+  height: 40px;
+  margin-bottom: $spc-s;
+
+  background: $light-text;
+
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.textarea {
+  height: 210px;
+
+  padding-top: $spc-s;
+  margin-bottom: $spc-s;
+
+  background: $light-text;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.button {
+  padding: $spc-s;
+
+  background: $primary;
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: $white;
+  border-color: $primary;
+}
