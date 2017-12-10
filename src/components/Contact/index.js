@@ -42,8 +42,6 @@ export default class Contact extends Component {
           <textarea
             className={s.textarea}
             onChange={this.onChange('message')}
-            rows="20"
-            cols="20"
             placeholder="Your message"
           />
 
