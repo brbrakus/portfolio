@@ -80,6 +80,8 @@
   width: 2rem;
 
   &:hover {
+    text-decoration: none;
+
     .icon {
       fill: $white;
     }

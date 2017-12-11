@@ -78,11 +78,14 @@ h4 {
 }
 
 a {
-  font-weight: bold;
   color: $white;
+  letter-spacing: 0.03rem;
 
   text-decoration: none;
-  text-transform: uppercase;
   text-shadow: $link-shadow;
   cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
