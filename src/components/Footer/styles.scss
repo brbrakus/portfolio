@@ -47,6 +47,7 @@
   text-transform: uppercase;
 
   visibility: hidden;
+  box-shadow: $heading-shadow;
 
   &:after {
     display: block;
@@ -70,7 +71,7 @@
 
   position: relative;
 
-  fill: $white;
+  fill: $white-text;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -80,8 +81,7 @@
 
   &:hover {
     .icon {
-      fill: $light-text;
-      text-shadow: $link-shadow;
+      fill: $white;
     }
 
     .tooltip {

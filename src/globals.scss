@@ -48,7 +48,7 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
 
-  color: $white;
+  color: $white-text;
   text-shadow: $heading-shadow;
 }
 
@@ -73,15 +73,16 @@ h4 {
   font-size: 0.8125rem;
   font-weight: 400;
 
-  color: $white;
+  color: $white-text;
   text-align: center;
 }
 
 a {
   font-weight: bold;
-  color: $accent;
+  color: $white;
 
   text-decoration: none;
+  text-transform: uppercase;
   text-shadow: $link-shadow;
   cursor: pointer;
 }
