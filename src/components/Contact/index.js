@@ -29,20 +29,20 @@ export default class Contact extends Component {
             className={s.input}
             type="text"
             onChange={this.onChange('name')}
-            placeholder="Your name"
+            placeholder="Your Name"
           />
 
           <input
             className={s.input}
             type="email"
             onChange={this.onChange('email')}
-            placeholder="Your email"
+            placeholder="Your Email"
           />
 
           <textarea
             className={s.textarea}
             onChange={this.onChange('message')}
-            placeholder="Your message"
+            placeholder="Your Message"
           />
 
           <button className={s.button} onClick={this.onSubmit}>

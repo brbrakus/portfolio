@@ -28,8 +28,8 @@
   display: flex;
   flex-flow: column nowrap;
 
-  width: 95%;
-  width: 95vw;
+  width: 85%;
+  width: 85vw;
 
   margin-top: $spc-m;
   max-width: 35.63rem; // 570px
@@ -37,14 +37,14 @@
 
 .input,
 .textarea {
-  height: 4.063rem; // 60px
+  height: 3.438rem; // 55px
 
   padding: $spc-s;
   margin-bottom: $spc-s;
 
   background: $form-color;
 
-  font-size: 1.375rem; // 22px
+  font-size: 1.25rem; // 20px
   color: $primary;
 
   border: none;
@@ -64,13 +64,13 @@
 }
 
 .textarea {
-  height: 15.63rem; // 250px
+  height: 14.38rem; // 230px
   padding-top: $spc-m;
 }
 
 .button {
-  height: 4.315rem;
-  width: 10.94rem; // 175px
+  height: 3.75rem; // 60px
+  width: 10rem; // 160px
 
   padding: $spc-s;
   margin-top: $spc-s;
@@ -78,7 +78,7 @@
   background: $button-color;
 
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.25rem; //c20px
   font-weight: 500;
 
   color: $white;
