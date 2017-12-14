@@ -27,13 +27,13 @@
   display: flex;
   flex-flow: column nowrap;
 
-  width: 80%;
-  width: 80vw;
+  width: 95%;
+  width: 95vw;
 
   margin-top: $spc-m;
 }
 
-.input {
+.input, .textarea {
   height: 3.125rem; //50px
 
   padding: $spc-s;
@@ -43,34 +43,23 @@
 
   font-size: 1rem;
 
-  border: 1px solid $accent;
-  border-bottom: 3px solid $accent;
+  border: none;
   border-radius: 6px;
 
   &::placeholder {
     color: $primary;
     text-align: center;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent;
+    box-shadow: 2px 2px 4px $form-focus-color, -2px -2px 4px $form-focus-color, 2px -2px 4px $form-focus-color, -2px 2px 4px $form-focus-color;
   }
 }
 
 .textarea {
   height: 9.375rem; // 150px
-
-  padding: $spc-s;
-  margin-bottom: $spc-s;
-
-  background: $form-color;
-
-  font-size: 1rem;
-
-  border: 1px solid $accent;
-  border-bottom: 3px solid $accent;
-  border-radius: 6px;
-
-  &::placeholder {
-    color: $primary;
-    text-align: center;
-  }
 }
 
 .button {
@@ -88,7 +77,13 @@
 
   border: 1px solid $primary;
   border-radius: 6px;
-  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 6px $shadow;
 
   align-self: center;
+  outline: none;
+
+  &:active {
+    margin: -1px 0 1px 0;
+    box-shadow: 6px 6px 10px $shadow;
+  }
 }
