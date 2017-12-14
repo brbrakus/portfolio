@@ -1,3 +1,4 @@
+@import 'theme/borders.scss';
 @import 'theme/colors.scss';
 @import 'theme/shadows.scss';
 @import 'theme/spacings.scss';
@@ -47,8 +48,7 @@
   color: $primary;
 
   border: none;
-  border-radius: 6px;
-
+  border-radius: $form-radius;
   &::placeholder {
     font-weight: 300;
     color: $white;
@@ -84,7 +84,8 @@
   color: $white;
 
   border: 1px solid $button-color;
-  border-radius: 6px;
+  border-radius: $form-radius;
+
   box-shadow: 4px 4px 8px $shadow;
 
   letter-spacing: $letter-spc-m;
