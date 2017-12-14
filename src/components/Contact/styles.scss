@@ -19,7 +19,6 @@
   color: $white;
 
   text-align: center;
-  text-transform: uppercase;
   text-shadow: $heading-shadow;
 }
 
@@ -31,10 +30,12 @@
   width: 95vw;
 
   margin-top: $spc-m;
+  max-width: 570px;
 }
 
-.input, .textarea {
-  height: 3.125rem; //50px
+.input,
+.textarea {
+  height: 4.063rem; // 60px
 
   padding: $spc-s;
   margin-bottom: $spc-s;
@@ -54,17 +55,18 @@
   &:focus {
     outline: none;
     border-color: $accent;
-    box-shadow: 2px 2px 4px $form-focus-color, -2px -2px 4px $form-focus-color, 2px -2px 4px $form-focus-color, -2px 2px 4px $form-focus-color;
+    box-shadow: 2px 2px 4px $form-focus-color, -2px -2px 4px $form-focus-color,
+      2px -2px 4px $form-focus-color, -2px 2px 4px $form-focus-color;
   }
 }
 
 .textarea {
-  height: 9.375rem; // 150px
+  height: 15.63rem; // 250px
 }
 
 .button {
   height: 3.125rem;
-  width: 10.94rem; //175px
+  width: 10.94rem; // 175px
 
   padding: $spc-s;
 

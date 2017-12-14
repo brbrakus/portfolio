@@ -23,7 +23,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div className={s.contact}>
-        <h3 className={s.title}>Contact me</h3>
+        <h2 className={s.title}>Contact me</h2>
         <form className={s.form}>
           <input
             className={s.input}
