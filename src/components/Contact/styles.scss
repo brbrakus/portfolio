@@ -1,6 +1,7 @@
 @import 'theme/colors.scss';
-@import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
+@import 'theme/spacings.scss';
+@import 'theme/typography.scss';
 
 .contact {
   display: flex;
@@ -42,13 +43,15 @@
 
   background: $form-color;
 
-  font-size: 1rem;
+  font-size: 1.375rem; // 22px
+  color: $primary;
 
   border: none;
   border-radius: 6px;
 
   &::placeholder {
-    color: $primary;
+    font-weight: 300;
+    color: $white;
     text-align: center;
   }
 
@@ -66,27 +69,37 @@
 }
 
 .button {
-  height: 3.125rem;
+  height: 4.315rem;
   width: 10.94rem; // 175px
 
   padding: $spc-s;
+  margin-top: $spc-s;
 
-  background: $primary;
+  background: $button-color;
 
-  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.375rem;
   font-weight: 500;
 
-  color: $light-text;
+  color: $white;
 
-  border: 1px solid $primary;
+  border: 1px solid $button-color;
   border-radius: 6px;
-  box-shadow: 3px 3px 6px $shadow;
+  box-shadow: 4px 4px 8px $shadow;
 
+  letter-spacing: $letter-spc-m;
   align-self: center;
   outline: none;
 
-  &:active {
-    margin: -1px 0 1px;
+  &:hover {
+    margin: calc(#{$spc-s} - 1px) 0 1px;
+
+    background: $primary;
+    border-color: $primary;
     box-shadow: 6px 6px 10px $shadow;
+  }
+
+  &:active {
+    margin-top: $spc-s;
   }
 }
