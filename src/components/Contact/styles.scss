@@ -93,14 +93,13 @@
   outline: none;
 
   &:hover {
-    margin: calc(#{$spc-s} - 1px) 0 1px;
-
     background: $primary;
     border-color: $primary;
-    box-shadow: 6px 6px 10px $shadow;
+    box-shadow: 5px 5px 10px $shadow;
   }
 
   &:active {
-    margin-top: $spc-s;
+    background: $button-color;
+    box-shadow: 2px 2px 4px $shadow;
   }
 }
