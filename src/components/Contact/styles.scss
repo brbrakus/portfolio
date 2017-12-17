@@ -1,0 +1,108 @@
+@import 'theme/borders.scss';
+@import 'theme/colors.scss';
+@import 'theme/shadows.scss';
+@import 'theme/spacings.scss';
+@import 'theme/typography.scss';
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  width: 100vw;
+
+  padding: $spc-l 0 $spc-xxl;
+
+  background: $secondary;
+  align-items: center;
+}
+
+.title {
+  color: $white;
+
+  text-align: center;
+  text-shadow: $heading-shadow;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 85%;
+  width: 85vw;
+
+  margin-top: $spc-m;
+  max-width: 35.63rem; // 570px
+}
+
+.input,
+.textarea {
+  height: 3.438rem; // 55px
+
+  padding: $spc-s;
+  margin-bottom: $spc-s;
+
+  background: $form-color;
+
+  font-size: 1.25rem; // 20px
+  color: $primary;
+
+  border: none;
+  border-radius: $form-radius;
+  &::placeholder {
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent;
+    box-shadow: 2px 2px 4px $form-focus-color, -2px -2px 4px $form-focus-color,
+      2px -2px 4px $form-focus-color, -2px 2px 4px $form-focus-color;
+  }
+}
+
+.textarea {
+  height: 14.38rem; // 230px
+  padding-top: $spc-m;
+}
+
+.button {
+  height: 3.75rem; // 60px
+  width: 10rem; // 160px
+
+  padding: $spc-s;
+  margin-top: $spc-s + 0.0625rem;
+
+  background: $button-color;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.25rem; //c20px
+  font-weight: 500;
+
+  color: $white;
+
+  border: 1px solid $button-color;
+  border-radius: $form-radius;
+
+  box-shadow: 4px 4px 8px $shadow;
+
+  letter-spacing: $letter-spc-m;
+  align-self: center;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    margin-top: $spc-s;
+    margin-bottom: 0.0625rem;
+
+    background: $primary;
+    border-color: $primary;
+    box-shadow: 5px 5px 10px $shadow;
+  }
+
+  &:active {
+    box-shadow: 2px 2px 4px $shadow;
+  }
+}

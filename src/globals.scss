@@ -48,7 +48,7 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
 
-  color: $secondary;
+  color: $white-text;
   text-shadow: $heading-shadow;
 }
 
@@ -65,8 +65,7 @@ h3 {
 
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 0.135rem;
-  text-transform: uppercase;
+  letter-spacing: $letter-spc-m;
   text-shadow: $heading-shadow;
 }
 
@@ -74,13 +73,19 @@ h4 {
   font-size: 0.8125rem;
   font-weight: 400;
 
-  color: $white;
+  color: $white-text;
   text-align: center;
 }
 
 a {
-  color: $accent;
+  color: $white;
+  letter-spacing: 0.03rem;
+
   text-decoration: none;
   text-shadow: $link-shadow;
   cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

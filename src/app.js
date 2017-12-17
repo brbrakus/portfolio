@@ -1,6 +1,7 @@
 import { h, render } from 'preact';
 import Welcome from 'components/Welcome';
-import About from 'components/About';
+import Work from 'components/Work';
+import Contact from 'components/Contact';
 import Footer from 'components/Footer';
 
 import './globals.scss';
@@ -8,7 +9,8 @@ import './globals.scss';
 render(
   <div>
     <Welcome />
-    <About />
+    <Work />
+    <Contact />
     <Footer />
   </div>,
   document.getElementById('app')

@@ -9,9 +9,8 @@
   height: 11rem;
 
   padding: 0 0 $spc-m 0;
-  margin-top: $spc-xxl;
 
-  background: $secondary;
+  background: $primary;
 
   justify-content: flex-end;
   align-items: center;
@@ -48,6 +47,7 @@
   text-transform: uppercase;
 
   visibility: hidden;
+  box-shadow: $heading-shadow;
 
   &:after {
     display: block;
@@ -71,7 +71,7 @@
 
   position: relative;
 
-  fill: $white;
+  fill: $white-text;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -80,9 +80,10 @@
   width: 2rem;
 
   &:hover {
+    text-decoration: none;
+
     .icon {
-      fill: $primary;
-      text-shadow: $link-shadow;
+      fill: $white;
     }
 
     .tooltip {

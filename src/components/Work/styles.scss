@@ -1,0 +1,24 @@
+@import 'theme/colors.scss';
+@import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
+
+.work {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: $spc-l 0;
+
+  background: $white;
+  align-items: center;
+
+}
+
+.title {
+  color: $primary;
+}
+
+.exampleImage {
+  width: 95%;
+  width: 95vw;
+  padding: $spc-l 0;
+}

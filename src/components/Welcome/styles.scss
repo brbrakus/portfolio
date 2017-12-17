@@ -6,7 +6,6 @@
   display: flex;
   flex-flow: column nowrap;
 
-  height: 100%;
   padding: $spc-l;
 
   background: transparent;
@@ -14,11 +13,24 @@
 }
 
 .title {
-  margin: 20vh 0 0 0;
+  margin: 10vh 0 0 0;
   text-align: right;
 }
 
 .subtitle {
-  color: $secondary;
+  color: $white-text;
   text-align: right;
+  text-transform: uppercase;
+}
+
+.description {
+  padding: $spc-l 0 $spc-xxl 0;
+
+  color: $white-text;
+}
+
+.link {
+  color: $accent;
+  text-decoration: none;
+  text-shadow: $link-shadow;
 }
