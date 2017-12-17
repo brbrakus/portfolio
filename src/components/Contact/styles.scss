@@ -73,7 +73,7 @@
   width: 10rem; // 160px
 
   padding: $spc-s;
-  margin-top: $spc-s;
+  margin-top: $spc-s + 0.0625rem;
 
   background: $button-color;
 
@@ -91,8 +91,12 @@
   letter-spacing: $letter-spc-m;
   align-self: center;
   outline: none;
+  cursor: pointer;
 
   &:hover {
+    margin-top: $spc-s;
+    margin-bottom: 0.0625rem;
+
     background: $primary;
     border-color: $primary;
     box-shadow: 5px 5px 10px $shadow;

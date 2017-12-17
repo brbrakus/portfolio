@@ -24,7 +24,7 @@ export default class Contact extends Component {
     return (
       <div className={s.contact}>
         <h2 className={s.title}>Contact me</h2>
-        <form className={s.form}>
+        <form onSubmit={this.onSubmit} className={s.form}>
           <input
             className={s.input}
             type="text"
@@ -37,15 +37,17 @@ export default class Contact extends Component {
             type="email"
             onChange={this.onChange('email')}
             placeholder="Your Email"
+            required
           />
 
           <textarea
             className={s.textarea}
             onChange={this.onChange('message')}
             placeholder="Your Message"
+            required
           />
 
-          <button className={s.button} onClick={this.onSubmit}>
+          <button type="submit" className={s.button}>
             Say hi!
           </button>
         </form>
