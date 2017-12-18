@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   width: 100%;
 
-  background: $primary;
+  background: $white;
 
   font-family: $fontRegular;
   font-size: 16px !important;
@@ -39,7 +39,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $fontHeading;
+  font-family: $fontRegular;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h2 {
   margin: 1.8675rem 0;
 
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: 700;
   text-shadow: $heading-shadow;
 }
 

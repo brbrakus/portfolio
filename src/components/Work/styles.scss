@@ -6,9 +6,9 @@
   display: flex;
   flex-flow: column nowrap;
 
-  padding: $spc-l 0;
+  padding-top: $spc-l;
 
-  background: $white;
+  background: $secondary;
   align-items: center;
 
 }
@@ -18,7 +18,6 @@
 }
 
 .exampleImage {
-  width: 95%;
-  width: 95vw;
-  padding: $spc-l 0;
+  width: 100%;
+  width: 100vw;
 }

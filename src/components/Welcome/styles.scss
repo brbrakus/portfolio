@@ -8,7 +8,7 @@
 
   padding: $spc-l;
 
-  background: transparent;
+  background: radial-gradient(farthest-corner at 30% 20%, $accent, $primary);
   align-items: center;
 }
 
