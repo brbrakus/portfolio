@@ -8,13 +8,12 @@
 
   padding-top: $spc-l;
 
-  background: $secondary;
   align-items: center;
-
 }
 
 .title {
   color: $primary;
+  text-shadow: $heading-shadow;
 }
 
 .exampleImage {

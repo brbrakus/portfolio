@@ -46,5 +46,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new styleLintPlugin()]
+  plugins: [new styleLintPlugin()] // eslint-disable-line new-cap
 };

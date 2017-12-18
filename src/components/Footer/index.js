@@ -35,7 +35,9 @@ const Footer = () => (
     <Icons />
     <h4>
       © Bruna Brakus 2017. View the{' '}
-      <a href="https://github.com/brbrakus/portfolio">source code.</a>
+      <a href="https://github.com/brbrakus/portfolio" className={s.link}>
+        source code.
+      </a>
     </h4>
   </div>
 );
