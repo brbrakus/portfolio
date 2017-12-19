@@ -14,7 +14,7 @@
 }
 
 .title {
-  margin: 10vh 0 0 0;
+  margin-top: 10vh 0 0 0;
 
   color: $white-text;
   text-shadow: $h1-shadow;
@@ -29,7 +29,7 @@
 }
 
 .description {
-  padding: $spc-l 0 $spc-xxl 0;
+  padding: $spc-l 0 $spc-xxl;
 
   color: $white-text;
   letter-spacing: $letter-spc-s;
