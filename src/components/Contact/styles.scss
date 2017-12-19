@@ -16,8 +16,8 @@
 }
 
 .title {
-  color: $primary;
-  text-shadow: $heading-shadow;
+  color: $dark;
+  text-shadow: $text-shadow-s;
 }
 
 .form {
@@ -40,7 +40,7 @@
   background: $form-color;
 
   font-size: 1.25rem; // 20px
-  color: $primary;
+  color: $dark;
 
   border: 1px solid $grey;
   border-radius: $form-radius;
@@ -71,14 +71,14 @@
   padding: $spc-s;
   margin-top: $spc-s + 0.0625rem;
 
-  background: $primary;
+  background: $dark;
 
   font-size: 1.25rem; // 20px
   font-weight: 700;
 
   color: $white-text;
 
-  border: 1px solid $primary;
+  border: 1px solid $dark;
   border-radius: $form-radius;
 
   box-shadow: 4px 4px 8px $shadow;

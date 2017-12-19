@@ -9,15 +9,15 @@
 
   padding: $spc-l;
 
-  background: radial-gradient(farthest-corner at 30% 20%, $accent, $primary);
+  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
   align-items: center;
 }
 
 .title {
-  margin-top: 10vh 0 0 0;
+  margin: 10vh 0 0 0;
 
   color: $white-text;
-  text-shadow: $h1-shadow;
+  text-shadow: $text-shadow-m;
 }
 
 .subtitle {
@@ -25,7 +25,7 @@
 
   text-align: right;
   text-transform: uppercase;
-  text-shadow: $h1-shadow;
+  text-shadow: $text-shadow-m;
 }
 
 .description {
@@ -33,10 +33,11 @@
 
   color: $white-text;
   letter-spacing: $letter-spc-s;
-  text-shadow: $heading-shadow;
+  text-shadow: $text-shadow-s;
 }
 
 .link {
   color: $white;
-  text-shadow: $heading-shadow;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-s;
 }

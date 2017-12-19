@@ -1,10 +1,10 @@
 $white: #fff;
-$white-text: rgb(241, 240, 241);
+$white-text: #f1f0f1;
 $grey: #d3d3d3;
 
-$primary: #2f215e;
-$secondary: $white-text;
-$accent: rgb(95, 73, 139);
+$dark: #2f215e;
+$light: $white-text;
+$accent: #5f498b;
 
 $form-color: rgba(255, 255, 255, .7);
 $form-focus-color: rgba(95, 73, 139, .6);
