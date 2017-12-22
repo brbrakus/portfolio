@@ -8,12 +8,15 @@
 
   height: 11rem;
 
-  padding: 0 0 $spc-m 0;
+  padding-bottom: $spc-m;
 
-  background: $primary;
+  background: $dark;
 
   justify-content: flex-end;
   align-items: center;
+
+  color: $white-text;
+  text-align: center;
 }
 
 .icons {
@@ -22,13 +25,14 @@
 
   width: 14.5rem;
 
-  margin: 0 0 $spc-s 0;
+  margin-bottom: $spc-s;
 
   justify-content: space-around;
 }
 
 .tooltip {
   display: block;
+
   width: 5rem;
   padding: $spc-s;
 
@@ -36,18 +40,18 @@
   top: -1rem;
   left: -1.5rem;
 
-  background: $accent;
+  background: $white-text;
 
   font-size: 0.8rem;
   font-weight: bold;
-  color: $white;
+  color: $dark;
   border-radius: 3px;
 
   text-align: center;
   text-transform: uppercase;
 
   visibility: hidden;
-  box-shadow: $heading-shadow;
+  box-shadow: $text-shadow-s;
 
   &:after {
     display: block;
@@ -58,7 +62,7 @@
     left: 50%;
 
     border: solid;
-    border-color: $accent transparent transparent transparent;
+    border-color: $white-text transparent transparent transparent;
     border-width: 10px 10px 0 10px;
 
     content: '';
@@ -71,13 +75,17 @@
 
   position: relative;
 
-  fill: $white-text;
+  fill: $form-color;
+
   cursor: pointer;
-  transition: all 0.15s ease;
 }
 
 .link {
   width: 2rem;
+
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-s;
 
   &:hover {
     text-decoration: none;
@@ -92,6 +100,6 @@
   }
 
   .copyright {
-    color: $white;
+    color: $form-color;
   }
 }

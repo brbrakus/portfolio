@@ -6,19 +6,16 @@
   display: flex;
   flex-flow: column nowrap;
 
-  padding: $spc-l 0;
+  padding-top: $spc-l;
 
-  background: $white;
   align-items: center;
-
 }
 
 .title {
-  color: $primary;
+  color: $dark;
+  text-shadow: $text-shadow-s;
 }
 
 .exampleImage {
-  width: 95%;
-  width: 95vw;
-  padding: $spc-l 0;
+  width: 100%;
 }

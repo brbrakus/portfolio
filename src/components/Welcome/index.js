@@ -15,7 +15,10 @@ const Welcome = () => (
     <p className={s.description}>
       I{"'"}m helping to make the web a pretty place.
       <br />Also going graphic design and trying to make your brand stick out.
-      <br />To find out more <a href="/">see my CV.</a>
+      <br />To find out more{' '}
+      <a href="/" className={s.link}>
+        see my CV.
+      </a>
     </p>
   </div>
 );

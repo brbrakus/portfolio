@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   width: 100%;
 
-  background: $primary;
+  background: $light;
 
   font-family: $fontRegular;
   font-size: 16px !important;
@@ -34,55 +34,40 @@ body {
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $fontHeading;
-}
-
 h1 {
   margin: 2.01rem 0;
 
   font-size: 3rem;
-  font-weight: 400;
-
-  color: $white-text;
-  text-shadow: $heading-shadow;
+  font-weight: 900;
 }
 
 h2 {
   margin: 1.8675rem 0;
 
   font-size: 2.25rem;
-  font-weight: bold;
-  text-shadow: $heading-shadow;
+  font-weight: 700;
 }
 
 h3 {
   margin: 1.5rem 0;
 
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: $letter-spc-m;
-  text-shadow: $heading-shadow;
 }
 
 h4 {
   font-size: 0.8125rem;
-  font-weight: 400;
+  font-weight: 300;
 
-  color: $white-text;
-  text-align: center;
+  letter-spacing: $letter-spc-s;
 }
 
 a {
-  color: $white;
-  letter-spacing: 0.03rem;
+  letter-spacing: $letter-spc-s;
 
   text-decoration: none;
-  text-shadow: $link-shadow;
+
   cursor: pointer;
 
   &:hover {

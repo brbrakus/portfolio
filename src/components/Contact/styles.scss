@@ -9,19 +9,15 @@
   flex-flow: column nowrap;
 
   width: 100%;
-  width: 100vw;
 
   padding: $spc-l 0 $spc-xxl;
 
-  background: $secondary;
   align-items: center;
 }
 
 .title {
-  color: $white;
-
-  text-align: center;
-  text-shadow: $heading-shadow;
+  color: $dark;
+  text-shadow: $text-shadow-s;
 }
 
 .form {
@@ -31,7 +27,6 @@
   width: 85%;
   width: 85vw;
 
-  margin-top: $spc-m;
   max-width: 35.63rem; // 570px
 }
 
@@ -45,13 +40,14 @@
   background: $form-color;
 
   font-size: 1.25rem; // 20px
-  color: $primary;
+  color: $dark;
 
-  border: none;
+  border: 1px solid $grey;
   border-radius: $form-radius;
+
   &::placeholder {
     font-weight: 300;
-    color: $white;
+    color: $accent;
     text-align: center;
   }
 
@@ -75,15 +71,14 @@
   padding: $spc-s;
   margin-top: $spc-s + 0.0625rem;
 
-  background: $button-color;
+  background: $dark;
 
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.25rem; //c20px
-  font-weight: 500;
+  font-size: 1.25rem; // 20px
+  font-weight: 700;
 
-  color: $white;
+  color: $white-text;
 
-  border: 1px solid $button-color;
+  border: 1px solid $dark;
   border-radius: $form-radius;
 
   box-shadow: 4px 4px 8px $shadow;
@@ -91,14 +86,17 @@
   letter-spacing: $letter-spc-m;
   align-self: center;
   outline: none;
+
   cursor: pointer;
 
   &:hover {
     margin-top: $spc-s;
     margin-bottom: 0.0625rem;
 
-    background: $primary;
-    border-color: $primary;
+    background: $button-color;
+    color: $white;
+
+    border-color: $button-color;
     box-shadow: 5px 5px 10px $shadow;
   }
 

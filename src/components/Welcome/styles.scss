@@ -1,6 +1,7 @@
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
+@import 'theme/typography.scss';
 
 .wrapper {
   display: flex;
@@ -8,29 +9,35 @@
 
   padding: $spc-l;
 
-  background: transparent;
+  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
   align-items: center;
 }
 
 .title {
   margin: 10vh 0 0 0;
-  text-align: right;
+
+  color: $white-text;
+  text-shadow: $text-shadow-m;
 }
 
 .subtitle {
   color: $white-text;
+
   text-align: right;
   text-transform: uppercase;
+  text-shadow: $text-shadow-m;
 }
 
 .description {
-  padding: $spc-l 0 $spc-xxl 0;
+  padding: $spc-l 0 $spc-xxl;
 
   color: $white-text;
+  letter-spacing: $letter-spc-s;
+  text-shadow: $text-shadow-s;
 }
 
 .link {
-  color: $accent;
-  text-decoration: none;
-  text-shadow: $link-shadow;
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-s;
 }
