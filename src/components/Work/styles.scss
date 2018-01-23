@@ -1,4 +1,5 @@
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 
@@ -18,4 +19,14 @@
 
 .exampleImage {
   width: 100%;
+  padding: $spc-s 0;
+}
+
+@media screen and (min-width: $s-screen) {
+  .exampleImage {
+    display: flex;
+    flex-flow: row wrap;
+
+    max-width: 400px;
+  }
 }
