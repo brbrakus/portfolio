@@ -1,17 +1,14 @@
 import { h, render } from 'preact';
-import Welcome from 'components/Welcome';
-import Work from 'components/Work';
-import Contact from 'components/Contact';
-import Footer from 'components/Footer';
-
+import Router from 'preact-router';
+import Home from 'components/Home';
+import Cv from 'components/Cv';
 import './globals.scss';
 
-render(
-  <div>
-    <Welcome />
-    <Work />
-    <Contact />
-    <Footer />
-  </div>,
-  document.getElementById('app')
+const App = () => (
+  <Router>
+    <Cv path="/cv" />
+    <Home default />
+  </Router>
 );
+
+render(<App />, document.getElementById('app'));
