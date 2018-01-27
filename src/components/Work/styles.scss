@@ -54,9 +54,13 @@
 }
 
 .verticalTitle {
+  right: -10px;
+
   font-weight: bold;
   color: $dark;
+  line-height: 0;
   writing-mode: vertical-rl;
+
   text-transform: uppercase;
   align-self: flex-end;
 }

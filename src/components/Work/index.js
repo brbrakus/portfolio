@@ -8,7 +8,11 @@ const Example = ({ example: { title, link, image, name, description } }) => (
   <div className={s.work}>
     <div className={s.line} />
     <h3 className={s.title}>{name}</h3>
-    <p className={s.description}>{description}</p>
+    <p
+      className={s.description}
+      // means to provide links in description data
+      dangerouslySetInnerHTML={{ __html: description }} // eslint-disable-line react/no-danger
+    />
     <div className={s.wrapper}>
       <a className={s.link} href={link}>
         <ProgressiveImage
@@ -27,9 +31,7 @@ const Example = ({ example: { title, link, image, name, description } }) => (
 );
 
 const Work = () => (
-  <div className={s.work}>
-    {examples.map(example => <Example example={example} />)}
-  </div>
+  <div>{examples.map(example => <Example example={example} />)}</div>
 );
 
 export default Work;
