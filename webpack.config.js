@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
+    historyApiFallback: { index: '200.html' },
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000
