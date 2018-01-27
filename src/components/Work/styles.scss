@@ -8,7 +8,7 @@
 
   width: 100%;
 
-  padding: $spc-l $spc-l $spc-xl $spc-l;
+  padding: $spc-l $spc-l $spc-xl;
 
   justify-content: center;
   align-items: center;
@@ -31,9 +31,6 @@
 }
 
 .description {
-  display: flex;
-  flex-flow: row wrap;
-
   width: 100%;
 
   padding-bottom: $spc-m;

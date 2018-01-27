@@ -4,7 +4,7 @@ import examples from './examples';
 
 import s from './styles.scss';
 
-const Example = ({ example: { title, link, image, name, description } }) => (
+const Example = ({ example: { category, link, image, name, description } }) => (
   <div className={s.work}>
     <div className={s.line} />
     <h3 className={s.title}>{name}</h3>
@@ -15,14 +15,9 @@ const Example = ({ example: { title, link, image, name, description } }) => (
     />
     <div className={s.wrapper}>
       <a className={s.link} href={link}>
-        <ProgressiveImage
-          className={s.exampleImage}
-          src={image.src}
-          placeholder={image.placeholder}
-          alt={image.alt}
-        />
+        <ProgressiveImage className={s.exampleImage} {...image} />
       </a>
-      <h4 className={s.verticalTitle}>{title}</h4>
+      <h4 className={s.verticalTitle}>{category}</h4>
     </div>
     <a href={link} className={s.link}>
       See it here

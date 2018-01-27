@@ -7,7 +7,7 @@ export default [
     image: images.monthlybudget,
     description:
       'Research, UX and UI design for progressive web app. App provides simple and easy way to manage budget on a monthly basis. Design was created in Figma app. Implementation is still in progress, see it on <a href="https://github.com/mirodojkic/monthly-budget" target="_blank">Github</a>. :)',
-    title: 'App Design'
+    category: 'App Design'
   },
   {
     name: 'Refužo',
@@ -15,7 +15,7 @@ export default [
     image: images.refuzo,
     description:
       'Brand design for healthy food stores based in Split (Croatia). That includes the logo, color guide and typography. Goal was to create a cohesive web & print brand identity.',
-    title: 'Brand Design'
+    category: 'Brand Design'
   },
   {
     name: 'Adomis',
@@ -23,6 +23,6 @@ export default [
     image: images.adomis,
     description:
       'Web page redesign and implementation for Astronomical society of Omiš, with accent on simplicity and performance.',
-    title: 'Web Design'
+    category: 'Web Design'
   }
 ];
