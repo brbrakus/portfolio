@@ -1,5 +1,4 @@
 @import 'theme/colors.scss';
-@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 
@@ -11,11 +10,12 @@
 
   padding: $spc-l $spc-l $spc-xl $spc-l;
 
+  justify-content: center;
   align-items: center;
 }
 
 .line {
-  height: 10px;
+  height: 0.625rem; //10px
   width: 100%;
 
   background: $accent;
@@ -46,6 +46,10 @@
 .wrapper {
   display: flex;
   flex-flow: row nowrap;
+
+  width: 100%;
+
+  justify-content: center;
 }
 
 .exampleImage {
@@ -54,11 +58,10 @@
 }
 
 .verticalTitle {
-  right: -10px;
+  margin: 0 0 0 $spc-s;
 
   font-weight: bold;
   color: $dark;
-  line-height: 0;
   writing-mode: vertical-rl;
 
   text-transform: uppercase;
