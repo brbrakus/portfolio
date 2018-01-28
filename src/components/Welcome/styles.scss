@@ -15,7 +15,6 @@
   flex-flow: column nowrap;
 
   width: 100%;
-
   padding: $spc-l;
 
   background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
@@ -46,7 +45,7 @@
 .description {
   width: 100%;
 
-  padding: $spc-l 0;
+  padding: $spc-l;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
