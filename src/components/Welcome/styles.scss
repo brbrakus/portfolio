@@ -7,8 +7,6 @@
   display: flex;
   flex-flow: column nowrap;
 
-  justify-content: center;
-
   align-items: center;
 }
 
@@ -25,7 +23,7 @@
 }
 
 .title {
-  margin: 10vh 0 0;
+  margin: 5vh 0 0;
 
   color: $white-text;
   text-shadow: $text-shadow-m;
@@ -46,15 +44,19 @@
 }
 
 .description {
-  padding: $spc-l 0 $spc-l;
+  width: 100%;
+
+  padding: $spc-l 0;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
   text-shadow: $text-shadow-s;
+  max-width: 34.38rem; // 550px
+  text-align: left;
 }
 
 .link {
-  color: $white;
+  color: $accent;
   text-transform: uppercase;
   text-shadow: $text-shadow-s;
 }

@@ -22,7 +22,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className={s.contact}>
+      <div id="contact" className={s.contact}>
         <h2 className={s.title}>Contact me</h2>
         <form onSubmit={this.onSubmit} className={s.form}>
           <input

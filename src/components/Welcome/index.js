@@ -26,7 +26,10 @@ const Welcome = () => (
         see my CV.
       </Link>
       <br />
-      <br /> Contact me here.
+      <br />{' '}
+      <a href="#contact" className={s.link}>
+        Contact me
+      </a>
     </p>
     <SocialNetworkIcons
       tooltipClassName={s.tooltip}
