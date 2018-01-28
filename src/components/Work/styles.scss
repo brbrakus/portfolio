@@ -31,6 +31,8 @@
   width: 100%;
 
   background: $accent;
+
+  max-width: 28.13rem; // 450px
 }
 
 .title {
@@ -48,6 +50,8 @@
   padding-bottom: $spc-m;
 
   color: $dark;
+
+  max-width: 34.38rem; // 550px
   text-align: left;
   align-content: center;
 }
@@ -84,7 +88,7 @@
   color: $accent;
 }
 
-@media screen and (min-width: $m-screen) {
+@media screen and (min-width: $small-desktop) {
   .work {
     padding-bottom: $spc-xxl;
   }
