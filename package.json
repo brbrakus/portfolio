@@ -48,7 +48,8 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
-    "preact": "^8.2.6"
+    "preact": "^8.2.6",
+    "preact-router": "^2.6.0"
   },
   "prettier": {
     "singleQuote": true

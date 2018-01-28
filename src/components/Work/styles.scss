@@ -6,16 +6,67 @@
   display: flex;
   flex-flow: column nowrap;
 
-  padding-top: $spc-l;
+  width: 100%;
 
+  padding: $spc-l $spc-l $spc-xl;
+
+  justify-content: center;
   align-items: center;
 }
 
+.line {
+  height: 0.625rem; //10px
+  width: 100%;
+
+  background: $accent;
+}
+
 .title {
+  padding-top: $spc-m;
+
   color: $dark;
+
+  text-align: center;
   text-shadow: $text-shadow-s;
+}
+
+.description {
+  width: 100%;
+
+  padding-bottom: $spc-m;
+
+  color: $dark;
+  text-align: left;
+  align-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+  width: 100%;
+
+  justify-content: center;
 }
 
 .exampleImage {
   width: 100%;
+  align-self: flex-start;
+}
+
+.category {
+  margin: 0 0 0 $spc-s;
+
+  font-weight: bold;
+  color: $dark;
+  writing-mode: vertical-rl;
+
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.link {
+  margin-top: $spc-l;
+
+  color: $accent;
 }

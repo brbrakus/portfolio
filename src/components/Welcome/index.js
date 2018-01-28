@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { Link } from 'preact-router/match';
 
 import ProfilePicture from 'components/ProfilePicture';
 import images from 'assets/images';
@@ -16,9 +17,9 @@ const Welcome = () => (
       I{"'"}m helping to make the web a pretty place.
       <br />Also going graphic design and trying to make your brand stick out.
       <br />To find out more{' '}
-      <a href="/" className={s.link}>
+      <Link href="/cv" className={s.link}>
         see my CV.
-      </a>
+      </Link>
     </p>
   </div>
 );

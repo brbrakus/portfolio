@@ -10,4 +10,14 @@ export default {
     src: require('./refuzo.jpg'),
     alt: 'refuzo-logo',
   },
+  monthlybudget: {
+    placeholder: require('./monthly-budget.jpg'),
+    src: require('./monthly-budget.jpg'),
+    alt: 'monthly-budget-app',
+  },
+  adomis: {
+    placeholder: require('./adomis.jpg'),
+    src: require('./adomis.jpg'),
+    alt: 'adomis-web',
+  },
 }
