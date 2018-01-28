@@ -1,6 +1,15 @@
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
+@import 'theme/typography.scss';
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+}
 
 .work {
   display: flex;
@@ -12,6 +21,9 @@
 
   justify-content: center;
   align-items: center;
+
+  max-width: 46.25rem; // 740px
+  justify-self: center;
 }
 
 .line {
@@ -19,6 +31,8 @@
   width: 100%;
 
   background: $accent;
+
+  max-width: 28.13rem; // 450px
 }
 
 .title {
@@ -36,6 +50,8 @@
   padding-bottom: $spc-m;
 
   color: $dark;
+
+  max-width: 34.38rem; // 550px
   text-align: left;
   align-content: center;
 }
@@ -51,11 +67,12 @@
 
 .exampleImage {
   width: 100%;
+  max-width: 31.25rem; // 500px
   align-self: flex-start;
 }
 
 .category {
-  margin: 0 0 0 $spc-s;
+  margin-right: $spc-s;
 
   font-weight: bold;
   color: $dark;
@@ -69,4 +86,32 @@
   margin-top: $spc-l;
 
   color: $accent;
+}
+
+@media screen and (min-width: $small-desktop) {
+  .work {
+    padding-bottom: $spc-xxl;
+  }
+
+  .line {
+    width: 66%;
+  }
+
+  .title {
+    font-weight: bold;
+    color: $accent;
+  }
+
+  .description {
+    width: 81%;
+  }
+
+  .category {
+    font-size: 1rem;
+    letter-spacing: $letter-spc-m;
+  }
+
+  .link {
+    font-size: 1.25rem;
+  }
 }

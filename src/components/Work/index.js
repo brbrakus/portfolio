@@ -26,7 +26,9 @@ const Example = ({ example: { category, link, image, name, description } }) => (
 );
 
 const Work = () => (
-  <div>{examples.map(example => <Example example={example} />)}</div>
+  <div className={s.content}>
+    {examples.map(example => <Example example={example} />)}
+  </div>
 );
 
 export default Work;
