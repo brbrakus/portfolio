@@ -18,7 +18,7 @@ const Welcome = () => (
     <ProfilePicture image={images.profile} className={s.profilePicture} />
 
     <p className={s.description}>
-      I{"'"}m helping to make the web a pretty place.
+      Helping to make the web a pretty place.
       <br />Also doing graphic design and trying to make your brand stick out.
       <br />
       <br />To find out more{' '}
