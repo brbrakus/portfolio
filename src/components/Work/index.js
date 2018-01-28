@@ -14,12 +14,12 @@ const Example = ({ example: { category, link, image, name, description } }) => (
       dangerouslySetInnerHTML={{ __html: description }} // eslint-disable-line react/no-danger
     />
     <div className={s.wrapper}>
-      <a className={s.link} href={link}>
+      <a className={s.link} href={link} target="_blank">
         <ProgressiveImage className={s.exampleImage} {...image} />
       </a>
       <h4 className={s.category}>{category}</h4>
     </div>
-    <a href={link} className={s.link}>
+    <a href={link} className={s.link} target="_blank">
       See it here
     </a>
   </div>
