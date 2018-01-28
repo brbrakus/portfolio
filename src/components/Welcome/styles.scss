@@ -3,9 +3,20 @@
 @import 'theme/shadows.scss';
 @import 'theme/typography.scss';
 
+.welcome {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
 .wrapper {
   display: flex;
   flex-flow: column nowrap;
+
+  width: 100%;
 
   padding: $spc-l;
 
@@ -14,13 +25,15 @@
 }
 
 .title {
-  margin: 10vh 0 0 0;
+  margin: 10vh 0 0;
 
   color: $white-text;
   text-shadow: $text-shadow-m;
 }
 
 .subtitle {
+  padding-bottom: $spc-xxl;
+
   color: $white-text;
 
   text-align: right;
@@ -28,10 +41,14 @@
   text-shadow: $text-shadow-m;
 }
 
+.profilePicture {
+  margin-top: -100px;
+}
+
 .description {
   padding: $spc-l 0 $spc-xxxl;
 
-  color: $white-text;
+  color: $dark;
   letter-spacing: $letter-spc-s;
   text-shadow: $text-shadow-s;
 }
