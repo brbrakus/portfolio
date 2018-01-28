@@ -1,0 +1,59 @@
+@import 'theme/colors.scss';
+@import 'theme/screens.scss';
+@import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
+
+.cv {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.idWrapper {
+  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
+}
+
+.idTitile {
+  padding: $spc-l 0 0 10vw;
+
+  color: $white-text;
+}
+
+.idDescription {
+  padding: 0 0 $spc-l 15vw;
+
+  color: $white-text;
+}
+
+.title {
+  padding: $spc-l 0 0 10vw;
+
+  color: $accent;
+}
+
+.description {
+  padding: 0 0 $spc-l 15vw;
+
+  color: $dark;
+  border-bottom: 1px solid $grey;
+}
+
+@media screen and (min-width: $medium-desktop) {
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: $spc-l $spc-xl 0 0;
+
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .title {
+    padding: 0;
+  }
+
+  .description {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
