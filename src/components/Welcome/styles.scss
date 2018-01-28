@@ -46,7 +46,7 @@
 }
 
 .description {
-  padding: $spc-l 0 $spc-xxxl;
+  padding: $spc-l 0 $spc-l;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
@@ -57,4 +57,28 @@
   color: $white;
   text-transform: uppercase;
   text-shadow: $text-shadow-s;
+}
+
+.socialIcon {
+  padding-bottom: $spc-l;
+  fill: $accent;
+}
+
+.tooltip {
+  background: $accent;
+  color: $white;
+
+  &:after {
+    border-color: $accent transparent transparent transparent;
+  }
+}
+
+.socialIconLink {
+  color: $dark;
+
+  &:hover {
+    .socialIcon {
+      fill: $dark;
+    }
+  }
 }

@@ -2,6 +2,8 @@ import { h } from 'preact';
 import { Link } from 'preact-router/match';
 
 import ProfilePicture from 'components/ProfilePicture';
+import SocialNetworkIcons from 'components/SocialNetworkIcons';
+
 import images from 'assets/images';
 import s from './styles.scss';
 
@@ -26,6 +28,11 @@ const Welcome = () => (
       <br />
       <br /> Contact me here.
     </p>
+    <SocialNetworkIcons
+      tooltipClassName={s.tooltip}
+      iconClassName={s.socialIcon}
+      linkClassName={s.socialIconLink}
+    />
   </div>
 );
 
