@@ -3,9 +3,9 @@ import ProgressiveImage from 'components/ProgressiveImage';
 
 import s from './styles.scss';
 
-const ProfilePicture = ({ image }) => (
+const ProfilePicture = ({ image, className }) => (
   <ProgressiveImage
-    className={s.image}
+    className={`${s.image} ${className}`}
     src={image.src}
     placeholder={image.placeholder}
     alt="profile-picture"

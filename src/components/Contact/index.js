@@ -22,8 +22,8 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className={s.contact}>
-        <h2 className={s.title}>Contact me</h2>
+      <div id="contact" className={s.contact}>
+        <h3 className={s.title}>Contact me</h3>
         <form onSubmit={this.onSubmit} className={s.form}>
           <input
             className={s.input}
