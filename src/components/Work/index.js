@@ -17,7 +17,7 @@ const Example = ({ example: { category, link, image, name, description } }) => (
       <a className={s.link} href={link}>
         <ProgressiveImage className={s.exampleImage} {...image} />
       </a>
-      <h4 className={s.verticalTitle}>{category}</h4>
+      <h4 className={s.category}>{category}</h4>
     </div>
     <a href={link} className={s.link}>
       See it here
@@ -26,7 +26,9 @@ const Example = ({ example: { category, link, image, name, description } }) => (
 );
 
 const Work = () => (
-  <div>{examples.map(example => <Example example={example} />)}</div>
+  <div className={s.content}>
+    {examples.map(example => <Example example={example} />)}
+  </div>
 );
 
 export default Work;

@@ -1,6 +1,15 @@
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
+@import 'theme/typography.scss';
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+}
 
 .work {
   display: flex;
@@ -12,6 +21,9 @@
 
   justify-content: center;
   align-items: center;
+
+  max-width: 740px;
+  justify-self: center;
 }
 
 .line {
@@ -51,11 +63,12 @@
 
 .exampleImage {
   width: 100%;
+  max-width: 500px;
   align-self: flex-start;
 }
 
-.verticalTitle {
-  margin: 0 0 0 $spc-s;
+.category {
+  margin-right: $spc-s;
 
   font-weight: bold;
   color: $dark;
@@ -69,4 +82,32 @@
   margin-top: $spc-l;
 
   color: $accent;
+}
+
+@media screen and (min-width: $m-screen) {
+  .work {
+    padding-bottom: $spc-xxl;
+  }
+
+  .line {
+    width: 66%;
+  }
+
+  .title {
+    font-weight: bold;
+    color: $accent;
+  }
+
+  .description {
+    width: 81%;
+  }
+
+  .category {
+    font-size: 1rem;
+    letter-spacing: $letter-spc-m;
+  }
+
+  .link {
+    font-size: 1.25rem;
+  }
 }
