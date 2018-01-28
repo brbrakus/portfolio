@@ -16,8 +16,12 @@
 }
 
 .title {
+  padding-bottom: $spc-l;
+
+  font-weight: bold;
   color: $dark;
-  text-shadow: $text-shadow-s;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-m;
 }
 
 .form {
@@ -27,7 +31,7 @@
   width: 85%;
   width: 85vw;
 
-  max-width: 35.63rem; // 570px
+  max-width: 34.38rem;
 }
 
 .input,
@@ -47,13 +51,13 @@
 
   &::placeholder {
     font-weight: 300;
-    color: $accent;
+    color: $dark;
     text-align: center;
   }
 
   &:focus {
     outline: none;
-    border-color: $accent;
+    border-color: $dark;
     box-shadow: 2px 2px 4px $form-focus-color, -2px -2px 4px $form-focus-color,
       2px -2px 4px $form-focus-color, -2px 2px 4px $form-focus-color;
   }
@@ -71,14 +75,14 @@
   padding: $spc-s;
   margin-top: $spc-s + 0.0625rem;
 
-  background: $dark;
+  background: $accent;
 
   font-size: 1.25rem; // 20px
-  font-weight: 700;
+  font-weight: 400;
 
   color: $white-text;
 
-  border: 1px solid $dark;
+  border: 1px solid $accent;
   border-radius: $form-radius;
 
   box-shadow: 4px 4px 8px $shadow;
