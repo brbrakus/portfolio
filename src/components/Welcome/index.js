@@ -26,7 +26,7 @@ const Welcome = () => (
         see my CV.
       </Link>
       <br />
-      <br />{' '}
+      <br />
       <a href="#contact" className={s.link}>
         Contact me
       </a>

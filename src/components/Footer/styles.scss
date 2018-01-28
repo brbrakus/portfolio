@@ -20,13 +20,7 @@
 }
 
 .link {
-  width: 2rem;
-
   color: $white;
   text-transform: uppercase;
   text-shadow: $text-shadow-s;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
