@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { Link } from 'preact-router/match';
 
 import CloseButton from 'assets/icons/CloseButton.js';
 
@@ -6,8 +7,10 @@ import s from './styles.scss';
 
 const Cv = () => (
   <div className={s.cv}>
+    <Link href="/" className={s.closeButton}>
+      <CloseButton />
+    </Link>
     <div className={s.idWrapper}>
-      <CloseButton className={s.closeButton} />
       <h3 className={s.idTitile}>Bruna Brakus</h3>
       <p className={s.idDescription}>
         Split, Croatia
@@ -44,12 +47,12 @@ const Cv = () => (
       <div>
         <h3 className={s.title}>Skills</h3>
         <p className={s.description}>
-          Adobe Creative Cloud:
-          <br />Illustrator, Photoshop,
-          <br />InDesign, Premiere
+          UX / UI design
+          <br />Static website implementation
+          <br />Logo design
+          <br />Photography
           <br />
-          <br />Web tehnologies:
-          <br />HTML 5, CSS 3 (scss), JavaScript
+          <br />
         </p>
       </div>
     </div>

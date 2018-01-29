@@ -8,16 +8,19 @@
   flex-flow: column nowrap;
 }
 
-.closeButton {
-  height: 32px;
-  width: 32px;
-
-  position: fixed;
-  fill: $white-text;
-}
-
 .idWrapper {
   background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
+}
+
+.closeButton {
+  height: 42px;
+  width: 42px;
+
+  padding: $spc-m $spc-m 0 0;
+
+  position: fixed;
+  align-self: flex-end;
+  fill: $white-text;
 }
 
 .idTitile {
@@ -27,7 +30,7 @@
 }
 
 .idDescription {
-  padding: 0 0 $spc-l 15vw;
+  padding: 0 0 $spc-xl 15vw;
 
   color: $white-text;
 }
