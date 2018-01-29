@@ -8,6 +8,14 @@
   flex-flow: column nowrap;
 }
 
+.closeButton {
+  height: 32px;
+  width: 32px;
+
+  position: fixed;
+  fill: $white-text;
+}
+
 .idWrapper {
   background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
 }

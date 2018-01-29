@@ -1,10 +1,13 @@
 import { h } from 'preact';
 
+import CloseButton from 'assets/icons/CloseButton.js';
+
 import s from './styles.scss';
 
 const Cv = () => (
   <div className={s.cv}>
     <div className={s.idWrapper}>
+      <CloseButton className={s.closeButton} />
       <h3 className={s.idTitile}>Bruna Brakus</h3>
       <p className={s.idDescription}>
         Split, Croatia
