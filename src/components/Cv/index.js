@@ -11,7 +11,7 @@ const Cv = () => (
       <CloseButton />
     </Link>
     <div className={s.idWrapper}>
-      <h3 className={s.idTitile}>Bruna Brakus</h3>
+      <h2 className={s.idTitile}>Bruna Brakus</h2>
       <p className={s.idDescription}>
         Split, Croatia
         <br />brunabrakus@protonmail.com
@@ -20,7 +20,7 @@ const Cv = () => (
 
     <div className={s.about}>
       <div className={s.card}>
-        <h3 className={s.title}>Work experience</h3>
+        <h2 className={s.title}>Work experience</h2>
         <p className={s.description}>
           <strong>Croativno: Graphic designer</strong>
           <br />HAUT d.o.o., Split
@@ -35,7 +35,7 @@ const Cv = () => (
         </p>
       </div>
       <div className={s.card}>
-        <h3 className={s.title}>Education</h3>
+        <h2 className={s.title}>Education</h2>
         <p className={s.description}>
           <strong>Media tehnician</strong>
           <br />School for Design, Graphics and
@@ -49,7 +49,7 @@ const Cv = () => (
         </p>
       </div>
       <div className={s.card}>
-        <h3 className={s.title}>Working in</h3>
+        <h2 className={s.title}>Working in</h2>
         <p className={s.description}>
           Adobe Creative Cloud:
           <br />Illustrator, Photoshop,

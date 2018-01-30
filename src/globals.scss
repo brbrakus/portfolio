@@ -1,7 +1,8 @@
-@import 'theme/spacings.scss';
-@import 'theme/typography.scss';
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
+@import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
+@import 'theme/typography.scss';
 
 html,
 body {
@@ -35,24 +36,22 @@ body {
 }
 
 h1 {
-  margin: 2.01rem 0;
+  margin: 1.5rem 0;
 
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
 h2 {
-  margin: 1.8675rem 0;
+  margin: 1.5rem 0;
 
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: $letter-spc-m;
 }
 
 h3 {
-  margin: 1.5rem 0;
-
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1rem;
   letter-spacing: $letter-spc-m;
 }
 
@@ -72,5 +71,17 @@ a {
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: $small-desktop) {
+  h1 {
+    margin: 2rem 0;
+
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }

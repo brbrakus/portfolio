@@ -4,7 +4,7 @@ import s from './styles.scss';
 
 const Contact = () => (
   <div id="contact" className={s.contact}>
-    <h3 className={s.title}>Contact me</h3>
+    <h2 className={s.title}>Contact me</h2>
     <form
       method="POST"
       action="https://formspree.io/brunabrakus@protonmail.com"

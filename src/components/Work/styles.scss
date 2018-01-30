@@ -65,14 +65,13 @@
 }
 
 .exampleImage {
-  height: 23.44rem; // 375px
-  width: 31.25rem; // 500px
-
+  width: 100%;
   background-image: linear-gradient(45deg, $grey 0%, $white 80%);
   align-self: flex-start;
 }
 
 .category {
+  display: none;
   margin-right: $spc-s;
 
   font-weight: bold;
@@ -106,10 +105,13 @@
   .description {
     width: 81%;
   }
+  .exampleImage {
+    height: 23.44rem; // 375px
+    width: 31.25rem; // 500px
+  }
 
   .category {
-    font-size: 1rem;
-    letter-spacing: $letter-spc-m;
+    display: block;
   }
 
   .link {
