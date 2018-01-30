@@ -10,7 +10,7 @@
   background: $white-text;
 }
 
-.idWrapper {
+.wrapper {
   background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
 }
 
@@ -25,35 +25,35 @@
   fill: $white-text;
 }
 
-.idTitile {
+.title {
   padding: 5vh 0 0 10vw;
 
   color: $white-text;
 }
 
-.idDescription {
+.description {
   padding: 0 0 $spc-xl 15vw;
 
   color: $white-text;
 }
 
-.title {
+.cardTitle {
   padding: $spc-m 0 0 10vw;
 
   color: $accent;
 }
 
-.description {
+.cardDescription {
   padding: 0 0 $spc-xl 15vw;
 
   color: $dark;
   border-bottom: 1px solid $grey;
 }
 
-@media screen and (min-width: $medium-desktop) {
-  .about {
+@media screen and (min-width: $desktop) {
+  .cards {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     width: 1000px;
     margin-top: $spc-l;
@@ -62,20 +62,23 @@
     align-self: center;
   }
 
-  .title {
-    padding: 0;
-  }
-
-  .description {
-    padding: 0;
-    border-bottom: 0;
-  }
-
   .card {
-    width: 18.75rem; //300px
+    height: 18.75rem; //300px
+    width: 18.75rem;
     padding: $spc-m;
 
     background: $white;
+
+    align-self: center;
     box-shadow: 2px 5px 10px $shadow;
+  }
+
+  .cardTitle {
+    padding: 0;
+  }
+
+  .cardDescription {
+    padding: 0;
+    border-bottom: 0;
   }
 }
