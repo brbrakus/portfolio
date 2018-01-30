@@ -17,42 +17,48 @@ const Cv = () => (
         <br />brunabrakus@protonmail.com
       </p>
     </div>
+
     <div className={s.about}>
-      <div>
+      <div className={s.card}>
         <h3 className={s.title}>Work experience</h3>
         <p className={s.description}>
-          Croativno: Graphic designer
+          <strong>Croativno: Graphic designer</strong>
           <br />HAUT d.o.o., Split
           <br />
-          <br />Refužo: Brand designer
+          <br />
+          <strong>Refužo: Brand designer</strong>
           <br />Eco-stil d.o.o., Split
           <br />
-          <br />Mid: Graphic Assistent
+          <br />
+          <strong>Mid: Graphic Assistent</strong>
           <br />Mid d.o.o., Split
         </p>
       </div>
-      <div>
+      <div className={s.card}>
         <h3 className={s.title}>Education</h3>
         <p className={s.description}>
-          Media tehnician
+          <strong>Media tehnician</strong>
           <br />School for Design, Graphics and
           <br />Sustainable Construction
           <br />Split, Croatia
           <br />
-          <br />Multimedia, Design and Applications
+          <br />
+          <strong>Multimedia, Design and Applications</strong>
           <br />University North
           <br />Varaždin, Croatia
         </p>
       </div>
-      <div>
-        <h3 className={s.title}>Skills</h3>
+      <div className={s.card}>
+        <h3 className={s.title}>Working in</h3>
         <p className={s.description}>
-          UX / UI design
-          <br />Static website implementation
-          <br />Logo design
-          <br />Photography
+          Adobe Creative Cloud:
+          <br />Illustrator, Photoshop,
+          <br />InDesign, Premiere
           <br />
+          <br />Sketch, Figma
           <br />
+          <br />Web tehnologies:
+          <br />HTML 5, CSS 3 (Scss)
         </p>
       </div>
     </div>

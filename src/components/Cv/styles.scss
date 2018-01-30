@@ -6,6 +6,8 @@
 .cv {
   display: flex;
   flex-flow: column nowrap;
+
+  background: $white-text;
 }
 
 .idWrapper {
@@ -24,7 +26,7 @@
 }
 
 .idTitile {
-  padding: $spc-l 0 0 10vw;
+  padding: 5vh 0 0 10vw;
 
   color: $white-text;
 }
@@ -36,13 +38,13 @@
 }
 
 .title {
-  padding: $spc-l 0 0 10vw;
+  padding: $spc-m 0 0 10vw;
 
   color: $accent;
 }
 
 .description {
-  padding: 0 0 $spc-l 15vw;
+  padding: 0 0 $spc-xl 15vw;
 
   color: $dark;
   border-bottom: 1px solid $grey;
@@ -53,10 +55,11 @@
     display: flex;
     flex-flow: row wrap;
 
-    padding: $spc-l $spc-xl 0 0;
+    width: 1000px;
+    margin-top: $spc-l;
 
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-self: center;
   }
 
   .title {
@@ -66,5 +69,13 @@
   .description {
     padding: 0;
     border-bottom: 0;
+  }
+
+  .card {
+    width: 300px;
+    padding: $spc-m;
+
+    background: $white;
+    box-shadow: 2px 5px 10px $shadow;
   }
 }
