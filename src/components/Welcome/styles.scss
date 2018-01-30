@@ -1,4 +1,5 @@
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 @import 'theme/typography.scss';
@@ -15,7 +16,7 @@
   flex-flow: column nowrap;
 
   width: 100%;
-  padding: $spc-l;
+  padding: 0 $spc-l;
 
   background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
   align-items: center;
@@ -29,7 +30,7 @@
 }
 
 .subtitle {
-  padding-bottom: $spc-xxl;
+  margin: 0 0 $spc-xxl+$spc-m;
 
   color: $white-text;
 
@@ -39,13 +40,15 @@
 }
 
 .profilePicture {
-  margin-top: -100px;
+  min-height: 9.375rem;
+  width: 9.375rem;
+  margin-top: -4.688rem; // 75px
 }
 
 .description {
   width: 100%;
 
-  padding: $spc-l;
+  padding: 0 $spc-l;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
@@ -81,5 +84,21 @@
     .socialIcon {
       fill: $dark;
     }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .subtitle {
+    margin: 0 0 $spc-xxxl;
+  }
+
+  .description {
+    padding: $spc-l;
+  }
+
+  .profilePicture {
+    min-height: 12.5rem;
+    width: 12.5rem;
+    margin-top: -$spc-xxl;
   }
 }

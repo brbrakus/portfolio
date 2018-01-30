@@ -1,0 +1,84 @@
+@import 'theme/colors.scss';
+@import 'theme/screens.scss';
+@import 'theme/spacings.scss';
+@import 'theme/shadows.scss';
+
+.cv {
+  display: flex;
+  flex-flow: column nowrap;
+
+  background: $white-text;
+}
+
+.wrapper {
+  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
+}
+
+.closeButton {
+  height: 2.625rem; // 42px
+  width: 2.625rem;
+
+  padding: $spc-m $spc-m 0 0;
+
+  position: fixed;
+  align-self: flex-end;
+  fill: $white-text;
+}
+
+.title {
+  padding: 5vh 0 0 10vw;
+
+  color: $white-text;
+}
+
+.description {
+  padding: 0 0 $spc-xl 15vw;
+
+  color: $white-text;
+}
+
+.cardTitle {
+  padding: $spc-m 0 0 10vw;
+
+  color: $accent;
+}
+
+.cardDescription {
+  padding: 0 0 $spc-xl 15vw;
+
+  color: $dark;
+  border-bottom: 1px solid $grey;
+}
+
+@media screen and (min-width: $desktop) {
+  .cards {
+    display: flex;
+    flex-flow: row nowrap;
+
+    width: 1000px;
+    margin-top: $spc-l;
+
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .card {
+    height: 18.75rem; //300px
+    width: 18.75rem;
+    padding: $spc-m;
+
+    background: $white;
+
+    align-self: center;
+    box-shadow: 2px 5px 10px $shadow;
+  }
+
+  .cardTitle {
+    padding: 0;
+  }
+
+  .cardDescription {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
