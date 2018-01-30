@@ -15,8 +15,8 @@
 }
 
 .closeButton {
-  height: 42px;
-  width: 42px;
+  height: 2.625rem; // 42px
+  width: 2.625rem;
 
   padding: $spc-m $spc-m 0 0;
 
@@ -55,7 +55,7 @@
     display: flex;
     flex-flow: row wrap;
 
-    width: 1000px;
+    width: 625rem; // 1000px
     margin-top: $spc-l;
 
     justify-content: space-between;
@@ -72,7 +72,7 @@
   }
 
   .card {
-    width: 300px;
+    width: 18.75rem; //300px
     padding: $spc-m;
 
     background: $white;

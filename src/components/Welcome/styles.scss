@@ -42,7 +42,7 @@
 .profilePicture {
   min-height: 9.375rem;
   width: 9.375rem;
-  margin-top: -75px;
+  margin-top: -4.688rem; // 75px
 }
 
 .description {
@@ -99,6 +99,6 @@
   .profilePicture {
     min-height: 12.5rem;
     width: 12.5rem;
-    margin-top: -100px;
+    margin-top: -$spc-xxl;
   }
 }
