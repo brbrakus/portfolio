@@ -10,8 +10,8 @@ const Card = ({ title, description }) => (
     <h2 className={s.cardTitle}>{title}</h2>
     <p
       className={s.cardDescription}
-      dangerouslySetInnerHTML={{ __html: description }}
       // eslint-disable-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: description }}
     />
   </div>
 );
