@@ -6,11 +6,11 @@
   display: flex;
   flex-flow: row nowrap;
 
-  width: 14.5rem;
+  width: 18.75rem;
 
   margin-bottom: $spc-s;
 
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .tooltip {
@@ -54,7 +54,7 @@
 }
 
 .icon {
-  width: 2rem; //32px
+  width: 1.875rem;
 
   position: relative;
 

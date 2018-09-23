@@ -1,13 +1,18 @@
 @import 'theme/colors.scss';
+@import 'theme/screens.scss';
 @import 'theme/spacings.scss';
 @import 'theme/shadows.scss';
 @import 'theme/typography.scss';
 
 .welcome {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  padding-top: $spc-xxl;
+  margin: 0 auto;
 
+  justify-content: center;
   align-items: center;
+  max-width: 68.75rem;
 }
 
 .wrapper {
@@ -15,54 +20,46 @@
   flex-flow: column nowrap;
 
   width: 100%;
-  padding: $spc-l;
+  padding: 0 $spc-m;
+  margin: 0 auto;
 
-  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
-  align-items: center;
+  align-items: flex-start;
+  max-width: 31.25rem;
 }
 
 .title {
   margin-top: 5vh;
 
-  color: $white-text;
-  text-shadow: $text-shadow-m;
-}
+  font-family: $fontHeadings;
+  font-size: 2.375rem;
+  font-weight: 900;
 
-.subtitle {
-  padding-bottom: $spc-xxl;
-
-  color: $white-text;
-
-  text-align: right;
-  text-transform: uppercase;
-  text-shadow: $text-shadow-m;
+  color: #000000;
 }
 
 .profilePicture {
-  margin-top: -100px;
+  margin-top: $spc-l;
 }
 
 .description {
   width: 100%;
 
-  padding: $spc-l;
+  font-size: 1.5rem;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
-  text-shadow: $text-shadow-s;
   max-width: 34.38rem; // 550px
   text-align: left;
 }
 
 .link {
-  color: $accent;
-  text-transform: uppercase;
-  text-shadow: $text-shadow-s;
+  font-weight: 500;
+  color: $dark;
 }
 
 .socialIcon {
   padding-bottom: $spc-l;
-  fill: $accent;
+  fill: $dark;
 }
 
 .tooltip {
@@ -81,5 +78,13 @@
     .socialIcon {
       fill: $dark;
     }
+  }
+}
+
+@media screen and (min-width: $small-desktop) {
+  .wrapper {
+    width: 50%;
+
+    justify-content: space-between;
   }
 }
