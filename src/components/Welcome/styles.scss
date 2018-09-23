@@ -6,12 +6,13 @@
 
 .welcome {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column-reverse nowrap;
   padding-top: $spc-xxl;
   margin: 0 auto;
 
   justify-content: center;
   align-items: center;
+
   max-width: 68.75rem;
 }
 
@@ -24,17 +25,22 @@
   margin: 0 auto;
 
   align-items: flex-start;
+  text-align: center;
   max-width: 31.25rem;
 }
 
 .title {
+  width: 100%;
   margin-top: 5vh;
+
+  background: -webkit-linear-gradient(45deg, #6d76de, #6dd4de);
 
   font-family: $fontHeadings;
   font-size: 2.375rem;
   font-weight: 900;
-
-  color: #000000;
+  color: $dark;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .profilePicture {
@@ -43,18 +49,23 @@
 
 .description {
   width: 100%;
+  margin-bottom: $spc-xl;
 
   font-size: 1.5rem;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
   max-width: 34.38rem; // 550px
-  text-align: left;
 }
 
 .link {
   font-weight: 500;
   color: $dark;
+}
+
+.icons {
+  width: 18.75rem;
+  margin: $spc-s auto;
 }
 
 .socialIcon {
@@ -63,11 +74,11 @@
 }
 
 .tooltip {
-  background: $accent;
+  background: linear-gradient(#6d76de, #6dd4de);
   color: $white;
 
   &:after {
-    border-color: $accent transparent transparent transparent;
+    border-color: #6dd4de transparent transparent transparent;
   }
 }
 
@@ -82,9 +93,19 @@
 }
 
 @media screen and (min-width: $small-desktop) {
-  .wrapper {
-    width: 50%;
+  .welcome {
+    flex-flow: row nowrap;
 
     justify-content: space-between;
+  }
+
+  .wrapper {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .icons {
+    margin: $spc-s;
   }
 }

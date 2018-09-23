@@ -22,6 +22,7 @@ const Welcome = () => (
         <br />
       </p>
       <SocialNetworkIcons
+        className={s.icons}
         tooltipClassName={s.tooltip}
         iconClassName={s.socialIcon}
         linkClassName={s.socialIconLink}

@@ -8,11 +8,12 @@ import CodepenIcon from 'assets/icons/Codepen.js';
 import s from './styles.scss';
 
 const SocialNetworkIcons = ({
+  className,
   tooltipClassName,
   iconClassName,
   linkClassName
 }) => (
-  <div className={s.icons}>
+  <div className={`${s.icons} ${className}`}>
     <a
       className={`${s.link} ${linkClassName}`}
       href="https://twitter.com/BrunaBrakus"
