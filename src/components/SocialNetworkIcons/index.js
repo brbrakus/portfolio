@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import cc from 'classcat';
 
 import TwitterIcon from 'assets/icons/Twitter.js';
 import DribbleIcon from 'assets/icons/Dribbble.js';
@@ -13,37 +14,37 @@ const SocialNetworkIcons = ({
   iconClassName,
   linkClassName
 }) => (
-  <div className={`${s.icons} ${className}`}>
+  <div className={cc([s.icons, className])}>
     <a
-      className={`${s.link} ${linkClassName}`}
+      className={cc([s.link, linkClassName])}
       href="https://twitter.com/BrunaBrakus"
     >
-      <div className={`${s.tooltip} ${tooltipClassName}`}>Twitter</div>
-      <TwitterIcon className={`${s.icon} ${iconClassName}`} />
+      <div className={cc([s.tooltip, tooltipClassName])}>Twitter</div>
+      <TwitterIcon className={cc([s.icon, iconClassName])} />
     </a>
 
     <a
-      className={`${s.link} ${linkClassName}`}
+      className={cc([s.link, linkClassName])}
       href="https://dribbble.com/BrunaBrakus"
     >
-      <div className={`${s.tooltip} ${tooltipClassName}`}>Dribbble</div>
-      <DribbleIcon className={`${s.icon} ${iconClassName}`} />
+      <div className={cc([s.tooltip, tooltipClassName])}>Dribbble</div>
+      <DribbleIcon className={cc([s.icon, iconClassName])} />
     </a>
 
     <a
-      className={`${s.link} ${linkClassName}`}
+      className={cc([s.link, linkClassName])}
       href="https://github.com/brbrakus"
     >
-      <div className={`${s.tooltip} ${tooltipClassName}`}>Github</div>
-      <GithubIcon className={`${s.icon} ${iconClassName}`} />
+      <div className={cc([s.tooltip, tooltipClassName])}>Github</div>
+      <GithubIcon className={cc([s.icon, iconClassName])} />
     </a>
 
     <a
-      className={`${s.link} ${linkClassName}`}
+      className={cc([s.link, linkClassName])}
       href="https://codepen.io/brunabrakus/"
     >
-      <div className={`${s.tooltip} ${tooltipClassName}`}>Codepen</div>
-      <CodepenIcon className={`${s.icon} ${iconClassName}`} />
+      <div className={cc([s.tooltip, tooltipClassName])}>Codepen</div>
+      <CodepenIcon className={cc([s.icon, iconClassName])} />
     </a>
   </div>
 );
