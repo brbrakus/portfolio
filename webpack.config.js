@@ -1,11 +1,18 @@
 const path = require('path');
-const styleLintPlugin = require('stylelint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin');
+
+const WebpackCritical = require('webpack-critical');
+
+const dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: dist
   },
   devServer: {
     historyApiFallback: { index: '200.html' },
@@ -29,18 +36,20 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              module: true,
-              localIdentName: '[path][name]-[local]'
-            }
-          },
-          'postcss-loader',
-          'sass-loader'
-        ]
+
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                module: true,
+                localIdentName: '[path][name]-[local]'
+              }
+            },
+            'sass-loader'
+          ]
+        })
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -48,5 +57,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [new styleLintPlugin()] // eslint-disable-line new-cap
+  plugins: [
+    new StyleLintPlugin(),
+    new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
+    new ExtractTextPlugin('styles.css'),
+    new WebpackCritical({ context: dist }),
+    new UglifyJsPlugin()
+  ]
 };
