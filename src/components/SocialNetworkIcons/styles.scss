@@ -1,6 +1,5 @@
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
-@import 'theme/shadows.scss';
 
 .icons {
   display: flex;
@@ -30,7 +29,6 @@
   text-transform: uppercase;
 
   visibility: hidden;
-  box-shadow: $text-shadow-s;
 
   &:after {
     display: block;
@@ -64,7 +62,6 @@
 
   color: $white;
   text-transform: uppercase;
-  text-shadow: $text-shadow-s;
 
   &:hover {
     text-decoration: none;

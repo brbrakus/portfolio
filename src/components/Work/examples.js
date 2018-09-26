@@ -3,7 +3,7 @@ import images from 'assets/images';
 export default [
   {
     name: 'Mometum',
-    images: [images.monthlybudget, images.monthlybudget, images.monthlybudget],
+    images: [images.momentum1, images.momentum2, images.momentum3],
     description:
       'I’m product designer in Momentum team. Momentum is a modern reservation booking platform designed to bring happy customers to growing rental business.'
   },
@@ -17,7 +17,7 @@ export default [
       images.refuzo
     ],
     description:
-      'I designed web pages for  such as restaurant and accommodation Augusta Insula, Hotel Cvita, Astronomical Society of Omiš and Monthly Budget PWA'
+      'I designed web pages for  such as restaurant and accommodation Augusta Insula, Hotel Cvita, Astronomical Society of Omiš and Monthly Budget PWA.'
   },
   {
     name: 'Branding',

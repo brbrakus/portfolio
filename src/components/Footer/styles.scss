@@ -1,6 +1,5 @@
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
-@import 'theme/shadows.scss';
 
 .footer {
   display: flex;
@@ -22,5 +21,4 @@
 .link {
   color: $white;
   text-transform: uppercase;
-  text-shadow: $text-shadow-s;
 }

@@ -1,7 +1,6 @@
 @import 'theme/colors.scss';
 @import 'theme/screens.scss';
 @import 'theme/spacings.scss';
-@import 'theme/shadows.scss';
 @import 'theme/typography.scss';
 
 .content {
@@ -25,8 +24,6 @@
   padding: $spc-m $spc-l 0;
 
   color: $dark;
-
-  text-shadow: $text-shadow-s;
 }
 
 .description {
@@ -67,12 +64,11 @@
 
 .exampleImage {
   width: 100%;
-  align-self: flex-start;
 }
 
 @media screen and (min-width: $small-desktop) {
   .work {
-    padding-bottom: $spc-xxl;
+    padding: $spc-xxl 0;
   }
 
   .line {
@@ -93,7 +89,7 @@
 
   .images {
     padding: 0;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .big {
