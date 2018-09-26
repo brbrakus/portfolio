@@ -4,7 +4,7 @@ export default [
   {
     name: 'Monthly Budget',
     link: 'https://monthly-budget.surge.sh/',
-    image: images.monthlybudget,
+    images: [images.monthlybudget, images.monthlybudget, images.monthlybudget],
     description:
       'Research, UX and UI design for progressive web app. App provides simple and easy way to manage budget on a monthly basis. Design was created in Figma app. Implementation is still in progress, see it on <a href="https://github.com/mirodojkic/monthly-budget" target="_blank">Github</a>. :)',
     category: 'App Design'
@@ -12,7 +12,13 @@ export default [
   {
     name: 'Refužo',
     link: 'https://www.facebook.com/refuzo/',
-    image: images.refuzo,
+    images: [
+      images.refuzo,
+      images.refuzo,
+      images.refuzo,
+      images.refuzo,
+      images.refuzo
+    ],
     description:
       'Brand design for healthy food stores based in Split (Croatia). That includes the logo, color guide and typography. Goal was to create a cohesive web & print brand identity.',
     category: 'Brand Design'
@@ -20,7 +26,13 @@ export default [
   {
     name: 'Adomis',
     link: 'https://adomis.surge.sh/',
-    image: images.adomis,
+    images: [
+      images.adomis,
+      images.adomis,
+      images.adomis,
+      images.adomis,
+      images.adomis
+    ],
     description:
       'Web page redesign and implementation for Astronomical society of Omiš, with accent on simplicity and performance.',
     category: 'Web Design'
