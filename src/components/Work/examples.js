@@ -2,16 +2,13 @@ import images from 'assets/images';
 
 export default [
   {
-    name: 'Monthly Budget',
-    link: 'https://monthly-budget.surge.sh/',
+    name: 'Mometum',
     images: [images.monthlybudget, images.monthlybudget, images.monthlybudget],
     description:
-      'Research, UX and UI design for progressive web app. App provides simple and easy way to manage budget on a monthly basis. Design was created in Figma app. Implementation is still in progress, see it on <a href="https://github.com/mirodojkic/monthly-budget" target="_blank">Github</a>. :)',
-    category: 'App Design'
+      'I’m product designer in Momentum team. Momentum is a modern reservation booking platform designed to bring happy customers to growing rental business.'
   },
   {
-    name: 'Refužo',
-    link: 'https://www.facebook.com/refuzo/',
+    name: 'UX & UI Design',
     images: [
       images.refuzo,
       images.refuzo,
@@ -20,11 +17,10 @@ export default [
       images.refuzo
     ],
     description:
-      'Brand design for healthy food stores based in Split (Croatia). That includes the logo, color guide and typography. Goal was to create a cohesive web & print brand identity.',
-    category: 'Brand Design'
+      'I designed web pages for  such as restaurant and accommodation Augusta Insula, Hotel Cvita, Astronomical Society of Omiš and Monthly Budget PWA'
   },
   {
-    name: 'Adomis',
+    name: 'Branding',
     link: 'https://adomis.surge.sh/',
     images: [
       images.adomis,
@@ -34,7 +30,6 @@ export default [
       images.adomis
     ],
     description:
-      'Web page redesign and implementation for Astronomical society of Omiš, with accent on simplicity and performance.',
-    category: 'Web Design'
+      'I illustrated visual indentity and helped grow a brand for companies like Old Paths New Trails, Royal Marine Croatia, Refužo, Avax rent a car...'
   }
 ];
