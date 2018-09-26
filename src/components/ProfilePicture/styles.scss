@@ -1,7 +1,10 @@
 @import "theme/spacings.scss";
 
 .image {
+  min-height: 34.375rem;
+  width: 28.125rem;
+
   margin: $spc-l;
 
-  border-radius: 100%;
+  border-radius: 2%;
 }

@@ -10,32 +10,25 @@ import s from './styles.scss';
 const Welcome = () => (
   <div className={s.welcome}>
     <div className={s.wrapper}>
-      <h1 className={s.title}>Hi, I{"'"}m Bruna!</h1>
-
-      <h2 className={s.subtitle}>graphic & web designer</h2>
+      <h1 className={s.title}>Bruna Brakus</h1>
+      <p className={s.description}>
+        Designer helping to fill the web with pretty and friendly places as well
+        as build connections between brand’s visual indentity and people.
+        <br />
+        <br />
+        <Link href="/cv" className={s.link}>
+          See more in my CV
+        </Link>
+        <br />
+      </p>
+      <SocialNetworkIcons
+        className={s.icons}
+        tooltipClassName={s.tooltip}
+        iconClassName={s.socialIcon}
+        linkClassName={s.socialIconLink}
+      />
     </div>
-
     <ProfilePicture image={images.profile} className={s.profilePicture} />
-
-    <p className={s.description}>
-      Helping to make the web a pretty place.
-      <br />Also doing graphic design and trying to make your brand stick out.
-      <br />
-      <br />To find out more{' '}
-      <Link href="/cv" className={s.link}>
-        see my CV.
-      </Link>
-      <br />
-      <br />
-      <a href="#contact" className={s.link}>
-        Contact me
-      </a>
-    </p>
-    <SocialNetworkIcons
-      tooltipClassName={s.tooltip}
-      iconClassName={s.socialIcon}
-      linkClassName={s.socialIconLink}
-    />
   </div>
 );
 
