@@ -16,7 +16,7 @@ export default {
     alt: 'momentum-2',
   },
   momentum3: {
-    placeholder: require('./momentum3.jpg'),
+    placeholder: require('./momentum3-placeholder.jpg'),
     src: require('./momentum3.jpg'),
     alt: 'momentum-3',
   },
