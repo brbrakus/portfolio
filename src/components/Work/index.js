@@ -7,7 +7,7 @@ import s from './styles.scss';
 
 const Example = ({ example: { images, name, description } }) => (
   <div className={s.work}>
-    <h3 className={s.title}>{name}</h3>
+    <h2 className={s.title}>{name}</h2>
     <p
       className={s.description}
       // means to provide links in description data

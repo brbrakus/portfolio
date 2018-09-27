@@ -1,6 +1,5 @@
 @import 'theme/borders.scss';
 @import 'theme/colors.scss';
-@import 'theme/shadows.scss';
 @import 'theme/spacings.scss';
 @import 'theme/typography.scss';
 
@@ -21,7 +20,6 @@
   font-weight: bold;
   color: $dark;
   text-transform: uppercase;
-  text-shadow: $text-shadow-m;
 }
 
 .form {

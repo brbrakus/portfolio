@@ -7,7 +7,7 @@
     "precommit": "lint-staged",
     "build": "NODE_PATH=./src/ webpack --config webpack.config.js",
     "start": "webpack-dev-server --open",
-    "deploy": "npm run build && surge ./dist --domain bruna.surge.sh"
+    "deploy": "npm run build && surge ./dist --domain https://bruna.surge.sh"
   },
   "keywords": [],
   "author": "Bruna Brakus",
