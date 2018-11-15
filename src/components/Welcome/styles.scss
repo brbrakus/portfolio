@@ -6,7 +6,6 @@
 .welcome {
   display: flex;
   flex-flow: column-reverse nowrap;
-  padding-top: $spc-xxl;
   margin: 0 auto;
 
   justify-content: center;
@@ -94,6 +93,7 @@
 @media screen and (min-width: $small-desktop) {
   .welcome {
     flex-flow: row nowrap;
+    margin-top: $spc-xxl;
 
     justify-content: space-between;
   }

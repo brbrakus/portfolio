@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "NODE_PATH=./src/ webpack --config webpack.config.js",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "deploy": "npm run build && surge ./dist --domain https://bruna.surge.sh"
   },
   "keywords": [],
