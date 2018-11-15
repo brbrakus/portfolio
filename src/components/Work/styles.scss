@@ -1,3 +1,4 @@
+@import 'theme/borders.scss';
 @import 'theme/colors.scss';
 @import 'theme/screens.scss';
 @import 'theme/spacings.scss';
@@ -13,6 +14,8 @@
 .work {
   display: flex;
   flex-flow: column nowrap;
+
+  margin-bottom: $spc-xl;
 
   justify-content: center;
   align-items: flex-start;
@@ -64,11 +67,13 @@
 
 .exampleImage {
   width: 100%;
+  border-radius: $radius-large;
 }
 
 @media screen and (min-width: $small-desktop) {
   .work {
     padding: $spc-xxl 0;
+    margin-bottom: 0;
   }
 
   .line {
@@ -77,9 +82,6 @@
 
   .title {
     padding: $spc-m 0 0;
-
-    font-weight: bold;
-    color: $accent;
   }
 
   .description {

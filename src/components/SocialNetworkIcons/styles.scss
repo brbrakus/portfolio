@@ -1,9 +1,14 @@
+@import 'theme/borders.scss';
 @import 'theme/colors.scss';
 @import 'theme/spacings.scss';
+@import 'theme/screens.scss';
 
 .icons {
   display: flex;
   flex-flow: row nowrap;
+
+  width: 18.75rem;
+  margin: $spc-s auto;
 
   justify-content: space-between;
 }
@@ -20,10 +25,13 @@
 
   background: $white-text;
 
+  background: linear-gradient(20deg, #6d76de, #6dd4de 300%);
+
   font-size: 0.8rem;
   font-weight: bold;
   color: $dark;
-  border-radius: 3px;
+  color: $white;
+  border-radius: $radius-small;
 
   text-align: center;
   text-transform: uppercase;
@@ -44,34 +52,43 @@
 
     content: '';
     transform: translate(-50%, 100%);
+
+    border-color: $accent transparent transparent transparent;
   }
 }
 
 .icon {
   width: 1.875rem;
+  padding-bottom: $spc-l;
 
   position: relative;
 
-  fill: $form-color;
-
   cursor: pointer;
+  fill: $dark;
+  transition: 0.2s ease-out;
 }
 
 .link {
   width: 2rem;
 
-  color: $white;
+  color: $dark;
   text-transform: uppercase;
 
   &:hover {
     text-decoration: none;
 
     .icon {
-      fill: $white;
+      fill: $shadow;
     }
 
     .tooltip {
       visibility: visible;
     }
+  }
+}
+
+@media screen and (min-width: $small-desktop) {
+  .icons {
+    margin: $spc-s;
   }
 }

@@ -1,10 +1,15 @@
 import { h } from 'preact';
+import SocialNetworkIcons from 'components/SocialNetworkIcons';
 
 import s from './styles.scss';
 
 const Contact = () => (
   <div id="contact" className={s.contact}>
-    <h2 className={s.title}>Contact me</h2>
+    <h2 className={s.title}>Get in touch!</h2>
+    <p className={s.subtitle}>
+      For partnership, business inquiries or just to say hi fill up this form!
+      :)
+    </p>
     <form
       method="POST"
       action="https://formspree.io/brunabrakus@protonmail.com"
@@ -40,6 +45,7 @@ const Contact = () => (
         Say hi!
       </button>
     </form>
+    <SocialNetworkIcons />
   </div>
 );
 export default Contact;
