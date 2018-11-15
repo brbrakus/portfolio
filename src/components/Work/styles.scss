@@ -1,3 +1,4 @@
+@import 'theme/borders.scss';
 @import 'theme/colors.scss';
 @import 'theme/screens.scss';
 @import 'theme/spacings.scss';
@@ -66,7 +67,7 @@
 
 .exampleImage {
   width: 100%;
-  border-radius: 7px;
+  border-radius: $radius-large;
 }
 
 @media screen and (min-width: $small-desktop) {
@@ -81,9 +82,6 @@
 
   .title {
     padding: $spc-m 0 0;
-
-    font-weight: bold;
-    color: $accent;
   }
 
   .description {

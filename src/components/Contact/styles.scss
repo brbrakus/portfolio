@@ -9,17 +9,25 @@
 
   width: 100%;
 
-  padding: $spc-l 0 $spc-xxxl;
+  padding: $spc-l 0;
 
   align-items: center;
 }
 
 .title {
-  padding-bottom: $spc-l;
+  padding-bottom: $spc-s;
 
   font-weight: bold;
+
   color: $dark;
-  text-transform: uppercase;
+}
+
+.subtitle {
+  width: 85%;
+  width: 85vw;
+  padding-bottom: $spc-m;
+  text-align: center;
+  max-width: 27rem;
 }
 
 .form {
@@ -28,8 +36,8 @@
 
   width: 85%;
   width: 85vw;
-
-  max-width: 34.38rem;
+  margin-bottom: $spc-l;
+  max-width: 33.75rem;
 }
 
 .input,
@@ -45,7 +53,7 @@
   color: $dark;
 
   border: 1px solid $grey;
-  border-radius: $form-radius;
+  border-radius: $radius-large;
 
   &::placeholder {
     font-weight: 300;
@@ -74,16 +82,14 @@
   margin-top: $spc-s + 0.0625rem;
 
   background: $accent;
+  font-family: $fontHeadings;
 
   font-size: 1.25rem; // 20px
-  font-weight: 400;
+  font-weight: 900;
 
   color: $white-text;
 
-  border: 1px solid $accent;
-  border-radius: $form-radius;
-
-  box-shadow: 4px 4px 8px $shadow;
+  border-radius: $radius-large;
 
   letter-spacing: $letter-spc-m;
   align-self: center;
@@ -95,11 +101,8 @@
     margin-top: $spc-s;
     margin-bottom: 0.0625rem;
 
-    background: $button-color;
+    background: linear-gradient(20deg, #6d76de, #6dd4de 300%);
     color: $white;
-
-    border-color: $button-color;
-    box-shadow: 5px 5px 10px $shadow;
   }
 
   &:active {

@@ -1,3 +1,4 @@
+@import 'theme/borders.scss';
 @import 'theme/spacings.scss';
 
 .image {
@@ -5,5 +6,5 @@
   margin: $spc-l;
   object-fit: cover;
   max-width: 28.125rem;
-  border-radius: 2%;
+  border-radius: $radius-large;
 }

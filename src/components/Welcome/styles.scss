@@ -61,35 +61,6 @@
   color: $dark;
 }
 
-.icons {
-  width: 18.75rem;
-  margin: $spc-s auto;
-}
-
-.socialIcon {
-  padding-bottom: $spc-l;
-  fill: $dark;
-}
-
-.tooltip {
-  background: linear-gradient(#6d76de, #6dd4de);
-  color: $white;
-
-  &:after {
-    border-color: #6dd4de transparent transparent transparent;
-  }
-}
-
-.socialIconLink {
-  color: $dark;
-
-  &:hover {
-    .socialIcon {
-      fill: $dark;
-    }
-  }
-}
-
 @media screen and (min-width: $small-desktop) {
   .welcome {
     flex-flow: row nowrap;
@@ -102,9 +73,5 @@
     padding: 0;
     margin: 0;
     text-align: left;
-  }
-
-  .icons {
-    margin: $spc-s;
   }
 }

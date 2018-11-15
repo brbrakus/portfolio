@@ -5,13 +5,12 @@
   display: flex;
   flex-flow: column nowrap;
 
-  height: 11rem;
+  height: 3.125rem;
 
   padding-bottom: $spc-m;
 
-  background: $dark;
+  background: linear-gradient(90deg, #6d76de, #6dd4de);
 
-  justify-content: flex-end;
   align-items: center;
 
   color: $white-text;

@@ -4,10 +4,10 @@ $grey: #d3d3d3;
 
 $dark: #333333;
 $light: $white-text;
-$accent: $dark;
+$accent: rgb(109, 118, 222);
 
-$form-color: rgba(255, 255, 255, .7);
-$form-focus-color: rgba(79, 49, 169, .6);
-$button-color: rgba(79, 49, 169, .93);
+$form-color: rgba(255, 255, 255, 0.7);
+$form-focus-color: rgba(109, 118, 222, 0.4);
+$button-color: $accent;
 
 $shadow: rgba(0, 0, 0, 0.4);
