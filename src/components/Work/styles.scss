@@ -14,6 +14,8 @@
   display: flex;
   flex-flow: column nowrap;
 
+  margin-bottom: $spc-xl;
+
   justify-content: center;
   align-items: flex-start;
 
@@ -64,11 +66,13 @@
 
 .exampleImage {
   width: 100%;
+  border-radius: 7px;
 }
 
 @media screen and (min-width: $small-desktop) {
   .work {
     padding: $spc-xxl 0;
+    margin-bottom: 0;
   }
 
   .line {
