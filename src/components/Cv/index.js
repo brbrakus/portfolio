@@ -26,7 +26,7 @@ const Cv = () => (
       <h2 className={s.title}>Bruna Brakus</h2>
       <p className={s.description}>
         Split, Croatia
-        <br />brunabrakus@protonmail.com
+        <br />bruna.brakus@gmail.com
       </p>
     </div>
     <div className={s.cards}>

@@ -6,11 +6,11 @@
   display: flex;
   flex-flow: column nowrap;
 
-  background: $white-text;
+  background: $white;
 }
 
 .wrapper {
-  background: radial-gradient(farthest-corner at 30% 20%, $accent, $dark);
+  background: linear-gradient(20deg, #6d76de, #6dd4de 300%);
 }
 
 .closeButton {
@@ -25,13 +25,13 @@
 }
 
 .title {
-  padding: 5vh 0 0 10vw;
+  padding: 4vh 0 0 10vw;
 
   color: $white-text;
 }
 
 .description {
-  padding: 0 0 $spc-xl 15vw;
+  padding: 0 0 $spc-l 15vw;
 
   color: $white-text;
 }
@@ -39,7 +39,9 @@
 .cardTitle {
   padding: $spc-m 0 0 10vw;
 
-  color: $accent;
+  font-weight: 400;
+
+  color: $dark;
 }
 
 .cardDescription {
@@ -50,6 +52,14 @@
 }
 
 @media screen and (min-width: $desktop) {
+  .title {
+    padding-left: 18vw;
+  }
+
+  .description {
+    padding-left: 20vw;
+  }
+
   .cards {
     display: flex;
     flex-flow: row nowrap;
@@ -62,14 +72,13 @@
   }
 
   .card {
-    height: 18.75rem; //300px
     width: 18.75rem;
     padding: $spc-m;
 
     background: $white;
 
     align-self: center;
-    box-shadow: 2px 5px 10px $shadow;
+    box-shadow: 0px 4px 8px -2px $shadow;
   }
 
   .cardTitle {
