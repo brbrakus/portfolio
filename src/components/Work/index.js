@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import cc from 'classcat';
 import ProgressiveImage from 'components/ProgressiveImage';
+import Video from 'components/Video';
 import examples from './examples';
 
 import s from './styles.scss';
@@ -23,7 +24,11 @@ const Example = ({ example: { images, name, description } }) => (
     >
       {images.map(image => (
         <div className={s.imageContainer}>
-          <ProgressiveImage className={s.exampleImage} {...image} />
+          {image.isVideo ? (
+            <Video src={image.src} />
+          ) : (
+            <ProgressiveImage className={s.exampleImage} {...image.src} />
+          )}
         </div>
       ))}
     </div>
