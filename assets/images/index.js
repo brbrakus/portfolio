@@ -41,8 +41,8 @@ export default {
     alt: 'AVAX Rent a car webpage'
   },
   cvita: {
-    placeholder: require('./hotel_cvita_placeholder.jpg'),
-    src: require('./hotel_cvita_placeholder.jpg'),
+    placeholder: require('./hotel_cvita.jpg'),
+    src: require('./hotel_cvita.jpg'),
     alt: 'Hotel Cvita webpage'
   },
   augusta: {

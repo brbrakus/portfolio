@@ -1,12 +1,14 @@
 import images from 'assets/images';
 import adomisVideoUrl from 'assets/images/adomis.mp4';
+import opntVideoUrl from 'assets/images/opnt.mp4';
+import momentumVideoUrl from 'assets/images/momenutm2.mp4';
 
 export default [
   {
     name: 'Mometum',
     images: [
       { src: images.momentum1, isVideo: false },
-      { src: images.momentum2, isVideo: false },
+      { src: momentumVideoUrl, isVideo: true },
       { src: images.momentum3, isVideo: false }
     ],
     description:
@@ -26,9 +28,8 @@ export default [
   },
   {
     name: 'Branding',
-    link: 'https://adomis.surge.sh/',
     images: [
-      { src: images.opnt, isVideo: false },
+      { src: opntVideoUrl, isVideo: true },
       { src: images.momentum_logo, isVideo: false },
       { src: images.refuzo, isVideo: false },
       { src: images.rmc, isVideo: false },
