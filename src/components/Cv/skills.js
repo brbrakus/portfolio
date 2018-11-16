@@ -2,7 +2,7 @@ export default [
   {
     title: 'Work experience',
     description:
-      '<strong>Croativno: Graphic designer</strong><br />HAUT d.o.o., Split<br /><br /><strong>Refužo: Brand designer</strong><br />Eco-stil d.o.o., Split<br /><br /><strong>Mid: Graphic Assistent</strong><br />Mid d.o.o., Split'
+      '<strong>UX/UI designer</strong><br />Appacus Inc., Split<br /><br /><strong>Graphic designer</strong><br />Croativno, Split<br /><br /><strong>Brand designer</strong><br />Refužo, Split<br /><br />'
   },
   {
     title: 'Education',
@@ -12,6 +12,6 @@ export default [
   {
     title: 'Working in',
     description:
-      'Adobe Creative Cloud:<br />InDesign, Premiere<br />Illustrator, Photoshop,<br /><br />Sketch, Figma<br /><br />Web tehnologies:<br />HTML 5, CSS 3 (Scss)'
+      '<strong>Adobe Creative Cloud:</strong><br />InDesign, Premiere<br />Illustrator, Photoshop,<br /><br /><strong>Sketch, Figma, Marvel</strong><br /><br /><strong>Web tehnologies:</strong><br />HTML 5, CSS 3 (Scss)'
   }
 ];
