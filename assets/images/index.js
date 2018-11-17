@@ -67,7 +67,7 @@ export default {
   },
   avax_logo: {
     placeholder: require('./avax_logo_placeholder.jpg'),
-    src: require('./avax_logo_placeholder.jpg'),
+    src: require('./avax_logo.jpg'),
     alt: 'Royal Marine Croatia logo'
   }
 };
