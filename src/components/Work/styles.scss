@@ -31,7 +31,6 @@
 
 .description {
   width: 100%;
-
   padding: 0 $spc-l $spc-m;
 
   color: $dark;
@@ -91,6 +90,14 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .description {
+    max-width: calc(50vw + #{$spc-l});
+  }
+
+  .images {
+    grid-template-columns: calc(50vw + #{$spc-l});
+  }
+
   .big {
     grid-template-columns: repeat(2, 25vw);
     grid-template-rows: repeat(4, 25vw);
@@ -113,6 +120,7 @@
 
   .description {
     padding: 0 0 $spc-m;
+    max-width: unset;
     line-height: 1.25em;
   }
 
