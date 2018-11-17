@@ -109,6 +109,7 @@ $tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
   .work {
     padding: $spc-xxl 0;
     margin-bottom: 0;
+    max-width: $mobile-grid-width;
   }
 
   .line {
