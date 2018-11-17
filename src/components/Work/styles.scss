@@ -4,6 +4,12 @@
 @import 'theme/spacings.scss';
 @import 'theme/typography.scss';
 
+$mobile-column-width: 35vw;
+$mobile-grid-width: calc(2 * #{$mobile-column-width} + #{$spc-l});
+
+$tablet-column-width: 25vw;
+$tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
+
 .content {
   display: flex;
   flex-flow: column nowrap;
@@ -15,24 +21,22 @@
   display: flex;
   flex-flow: column nowrap;
 
-  margin-bottom: $spc-xl;
+  margin: 0 auto $spc-xl;
 
   justify-content: center;
-  align-items: flex-start;
-
-  max-width: 68.75rem;
+  align-items: center;
+  max-width: $mobile-grid-width;
 }
 
 .title {
-  padding: $spc-m $spc-l 0;
+  padding: $spc-m 0 0;
 
   color: $dark;
+  align-self: flex-start;
 }
 
 .description {
-  width: 100%;
-
-  padding: 0 $spc-l $spc-m;
+  display: flex;
 
   color: $dark;
 }
@@ -48,7 +52,7 @@
 
 .images {
   display: grid;
-  padding: 0 $spc-l;
+
   margin: 0 auto;
   grid-template-columns: 1fr;
   gap: $spc-l;
@@ -56,6 +60,10 @@
 
 .imageContainer {
   overflow: hidden;
+
+  video {
+    border-radius: $radius-large;
+  }
 
   img,
   video {
@@ -65,8 +73,8 @@
 }
 
 .big {
-  grid-template-columns: repeat(2, 40vw);
-  grid-template-rows: repeat(4, 40vw);
+  grid-template-columns: repeat(2, $mobile-column-width);
+  grid-template-rows: repeat(4, $mobile-column-width);
 
   .imageContainer:first-of-type {
     grid-column: span 2;
@@ -87,9 +95,13 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .work {
+    max-width: $tablet-grid-width;
+  }
+
   .big {
-    grid-template-columns: repeat(2, 25vw);
-    grid-template-rows: repeat(4, 25vw);
+    grid-template-columns: repeat(2, $tablet-column-width);
+    grid-template-rows: repeat(4, $tablet-column-width);
   }
 }
 
@@ -109,6 +121,7 @@
 
   .description {
     padding: 0 0 $spc-m;
+    max-width: unset;
     line-height: 1.25em;
   }
 
