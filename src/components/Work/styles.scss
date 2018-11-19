@@ -4,11 +4,14 @@
 @import 'theme/spacings.scss';
 @import 'theme/typography.scss';
 
-$mobile-column-width: 35vw;
-$mobile-grid-width: calc(2 * #{$mobile-column-width} + #{$spc-l});
+$grid-gap-small: $spc-m;
+$grid-gap-big: $spc-l;
+
+$mobile-column-width: 42vw;
+$mobile-grid-width: calc(2 * #{$mobile-column-width} + #{$grid-gap-small});
 
 $tablet-column-width: 25vw;
-$tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
+$tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$grid-gap-big});
 
 .content {
   display: flex;
@@ -75,6 +78,7 @@ $tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
 .big {
   grid-template-columns: repeat(2, $mobile-column-width);
   grid-template-rows: repeat(4, $mobile-column-width);
+  gap: $grid-gap-small;
 
   .imageContainer:first-of-type {
     grid-column: span 2;
@@ -102,6 +106,7 @@ $tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
   .big {
     grid-template-columns: repeat(2, $tablet-column-width);
     grid-template-rows: repeat(4, $tablet-column-width);
+    gap: $grid-gap-big;
   }
 }
 
@@ -109,7 +114,7 @@ $tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$spc-l});
   .work {
     padding: $spc-xxl 0;
     margin-bottom: 0;
-    max-width: $mobile-grid-width;
+    max-width: 68.75rem;
   }
 
   .line {

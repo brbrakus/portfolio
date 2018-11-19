@@ -64,6 +64,12 @@ module.exports = {
     new ExtractTextPlugin('styles.css'),
     new WebpackCritical({ context: dist }),
     new UglifyJsPlugin(),
-    new OfflinePlugin()
+    new OfflinePlugin({
+      caches: {
+        main: ['200.html', 'bundle.js'],
+        additional: [':rest:'],
+        optional: ['*.mp4']
+      }
+    })
   ]
 };

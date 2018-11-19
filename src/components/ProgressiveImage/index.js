@@ -23,6 +23,8 @@ export default class ProgressiveImage extends Component {
     });
 
   render({ className, alt }) {
-    return <img className={className} alt={alt} src={this.state.src} />;
+    return this.state.src ? (
+      <img className={className} alt={alt} src={this.state.src} />
+    ) : null;
   }
 }
