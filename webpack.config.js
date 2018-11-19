@@ -68,7 +68,7 @@ module.exports = {
       caches: {
         main: ['200.html', 'bundle.js'],
         additional: [':rest:'],
-        optional: ['*.mp4']
+        optional: ['*.jpg', '*.mp4']
       }
     })
   ]

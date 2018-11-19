@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "classcat": "^3.2.3",
+    "intersection-observer": "^0.5.1",
     "preact": "^8.2.6",
     "preact-router": "^2.6.0"
   },
