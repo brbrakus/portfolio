@@ -3,6 +3,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 
 const WebpackCritical = require('webpack-critical');
 
@@ -62,6 +63,13 @@ module.exports = {
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
     new ExtractTextPlugin('styles.css'),
     new WebpackCritical({ context: dist }),
-    new UglifyJsPlugin()
+    new UglifyJsPlugin(),
+    new OfflinePlugin({
+      caches: {
+        main: ['200.html', 'bundle.js'],
+        additional: [':rest:'],
+        optional: ['*.jpg', '*.mp4']
+      }
+    })
   ]
 };

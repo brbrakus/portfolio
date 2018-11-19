@@ -10,6 +10,7 @@
     "prettier/prettier": "error",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
+    "react/sort-comp": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off"

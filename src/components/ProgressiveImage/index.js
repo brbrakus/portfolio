@@ -1,18 +1,31 @@
 import { h, Component } from 'preact';
+import cc from 'classcat';
+
+import s from './styles.scss';
 
 export default class ProgressiveImage extends Component {
-  state = { src: '' };
+  state = { src: '', loaded: false };
 
-  componentWillMount() {
-    const { src, placeholder } = this.props;
-    this.fetchImage(placeholder)
-      .then(this.loadImage)
-      .then(() => this.fetchImage(src))
-      .then(this.loadImage);
-  }
+  handleIntersection = ([{ isIntersecting }]) => {
+    if (isIntersecting && !this.state.loaded) {
+      const { src, placeholder } = this.props;
+      this.fetchImage(placeholder)
+        .then(placeholderSrc => {
+          this.setState({ src: placeholderSrc });
+        })
+        .then(() => this.fetchImage(src))
+        .then(imageSrc => {
+          this.setState({ src: imageSrc, loaded: true });
+        });
+    }
+  };
 
-  loadImage = src => {
-    this.setState({ src });
+  observer = new IntersectionObserver(this.handleIntersection, {
+    rootMargin: '100px 0px 0px 0px'
+  });
+
+  observe = el => {
+    this.observer.observe(el);
   };
 
   fetchImage = src =>
@@ -22,7 +35,14 @@ export default class ProgressiveImage extends Component {
       image.addEventListener('load', () => resolve(src), false);
     });
 
-  render({ className, alt }) {
-    return <img className={className} alt={alt} src={this.state.src} />;
+  render({ className, alt }, { src }) {
+    return (
+      <img
+        ref={this.observe}
+        className={cc([s.image, { [s.loaded]: !!src }, className])}
+        alt={alt}
+        src={this.state.src}
+      />
+    );
   }
 }
