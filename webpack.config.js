@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const WebpackCritical = require('webpack-critical');
 
@@ -61,6 +62,7 @@ module.exports = {
   plugins: [
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
+    new FaviconsWebpackPlugin('./assets/images/favicon.png'),
     new ExtractTextPlugin('styles.css'),
     new WebpackCritical({ context: dist }),
     new UglifyJsPlugin(),
