@@ -2,6 +2,7 @@ const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'dist');
 
@@ -57,6 +58,7 @@ module.exports = {
   plugins: [
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
+    new FaviconsWebpackPlugin('./assets/images/favicon.png'),
     new ExtractTextPlugin('styles.css')
   ]
 };
