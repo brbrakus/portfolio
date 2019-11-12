@@ -6,8 +6,12 @@ import s from './styles.scss';
 export default class ProgressiveImage extends Component {
   state = { src: '', loaded: false };
 
-  handleIntersection = ([{ isIntersecting }]) => {
-    if (isIntersecting && !this.state.loaded) {
+  componentWillUnmount() {
+    this.observer.disconnect();
+  }
+
+  handleIntersection = entries => {
+    if (entries.some(entry => !!entry.isIntersecting) && !this.state.loaded) {
       const { src, placeholder } = this.props;
       this.fetchImage(placeholder)
         .then(placeholderSrc => {
@@ -25,6 +29,7 @@ export default class ProgressiveImage extends Component {
   });
 
   observe = el => {
+    if (!el) return;
     this.observer.observe(el);
   };
 

@@ -12,6 +12,6 @@ export default [
   {
     title: 'Working in',
     description:
-      '<strong>Adobe Creative Cloud:</strong><br />InDesign, Premiere<br />Illustrator, Photoshop,<br /><br /><strong>Sketch, Figma, Marvel</strong><br /><br /><strong>Web tehnologies:</strong><br />HTML 5, CSS 3 (Scss)'
+      '<strong>Adobe Creative Cloud:</strong><br />InDesign, Premiere<br />Illustrator, Photoshop,<br /><br /><strong>Sketch, Figma, InVision Studio,<br />Marvel, Zeplin</strong><br /><br /><strong>Web tehnologies:</strong><br />HTML 5, CSS 3 (SASS)'
   }
 ];

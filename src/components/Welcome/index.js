@@ -13,7 +13,7 @@ const Welcome = () => (
       <h1 className={s.title}>Bruna Brakus</h1>
       <p className={s.description}>
         Designer helping to fill the web with pretty and friendly places as well
-        as build connections between brand’s visual indentity and people.
+        as build connections between the brand’s visual identity and people.
         <br />
         <br />
         <Link href="/cv" className={s.link}>
