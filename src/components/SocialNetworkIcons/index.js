@@ -30,10 +30,7 @@ const SocialNetworkIcons = ({
       <GithubIcon className={cc([s.icon, iconClassName])} />
     </a>
 
-    <a
-      className={cc([s.link, linkClassName])}
-      href="https://codepen.io/brunabrakus/"
-    >
+    <a className={cc([s.link, linkClassName])} href="https://codepen.io/brunab">
       <div className={cc([s.tooltip, tooltipClassName])}>Codepen</div>
       <CodepenIcon className={cc([s.icon, iconClassName])} />
     </a>

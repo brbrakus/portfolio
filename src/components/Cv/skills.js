@@ -2,7 +2,7 @@ export default [
   {
     title: 'Work experience',
     description:
-      '<strong>UX/UI designer</strong><br />Appacus Inc., Split<br /><br /><strong>Graphic designer</strong><br />Croativno, Split<br /><br /><strong>Brand designer</strong><br />Refužo, Split<br /><br />'
+      '<strong>UX/UI designer</strong><br /Travel Soft d.o.o., Split<br /><br /><strong>UX/UI designer</strong><br />Appacus Inc., Split<br /><br /><strong>Graphic designer</strong><br />Croativno, Split<br /><br /><strong>Brand designer</strong><br />Refužo, Split<br /><br />'
   },
   {
     title: 'Education',

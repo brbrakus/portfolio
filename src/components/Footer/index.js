@@ -5,7 +5,7 @@ import s from './styles.scss';
 const Footer = () => (
   <div className={s.footer}>
     <h4>
-      © Bruna Brakus 2018. View the{' '}
+      © Bruna Brakus 2020. View the{' '}
       <a href="https://github.com/brbrakus/portfolio" className={s.link}>
         source code.
       </a>

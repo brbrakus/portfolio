@@ -81,7 +81,7 @@ export default {
     alt: 'Enduro Perun'
   },
   reel_app: {
-    placeholder: require('./reel-app-placeholder.png'),
+    placeholder: require('./reel-app-placeholder.jpg'),
     src: require('./reel-app.jpg'),
     alt: 'Reel app'
   },

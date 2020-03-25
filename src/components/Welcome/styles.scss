@@ -29,7 +29,7 @@
 
 .title {
   width: 100%;
-  margin-top: 5vh;
+  margin: 8vh 0 $spc-s;
 
   background: -webkit-linear-gradient(45deg, #6d76de, #6dd4de);
 
@@ -47,9 +47,9 @@
 
 .description {
   width: 100%;
-  margin-bottom: $spc-xl;
+  margin-bottom: $spc-l;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   color: $dark;
   letter-spacing: $letter-spc-s;
