@@ -1,16 +1,14 @@
 const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OfflinePlugin = require('offline-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
-const WebpackCritical = require('webpack-critical');
 
 const dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
+  mode: 'production',
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',
@@ -38,20 +36,18 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                module: true,
-                localIdentName: '[path][name]-[local]'
-              }
-            },
-            'sass-loader'
-          ]
-        })
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              context: __dirname,
+              modules: true,
+              sourceMap: true
+            }
+          },
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|svg|jpg|gif|mp4)$/,
@@ -63,9 +59,7 @@ module.exports = {
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
     new FaviconsWebpackPlugin('./assets/images/favicon.png'),
-    new ExtractTextPlugin('styles.css'),
-    new WebpackCritical({ context: dist }),
-    new UglifyJsPlugin(),
+    new MiniCssExtractPlugin(),
     new OfflinePlugin({
       caches: {
         main: ['200.html', 'bundle.js'],
