@@ -50,8 +50,9 @@
   margin-bottom: $spc-l;
 
   font-size: 1.25rem;
-
   color: $dark;
+  line-height: 130%;
+
   letter-spacing: $letter-spc-s;
   max-width: 34.38rem; // 550px
 }
@@ -74,4 +75,8 @@
     margin: 0;
     text-align: left;
   }
+
+  .profilePicture {
+    margin-top: 0;
+  }  
 }

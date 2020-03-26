@@ -14,7 +14,7 @@ export default [
       { src: images.reel_app, isVideo: false },
       { src: images.reel_logo, isVideo: false }
     ],
-    description: `Condition report system for vehicle rental businesses. The mobile app automates the reporting process and web app allows an agency to track reports and manage their fleet, users and other business entities. The Reel application won the 2nd place at the Get in the Ring startup competition in Split, Croatia. 
+    description: `Condition report system for vehicle rental businesses. The mobile app automates the reporting process and web app allows an agency to track reports and manage their fleet, users and other business entities. Reel application won the 2nd place at the Get in the Ring startup competition in Split, Croatia. 
     <br><br>
     My role was to help with the idea and design a visual identity, UX and UI for web and mobile apps. I've also implemented a landing page.
     <br>`

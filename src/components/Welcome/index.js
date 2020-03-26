@@ -12,8 +12,8 @@ const Welcome = () => (
     <div className={s.wrapper}>
       <h1 className={s.title}>Bruna Brakus</h1>
       <p className={s.description}>
-        Designer helping to fill the web with pretty and friendly places as well
-        as build connections between the brand’s visual identity and people.
+        Designer seeking to provide people with friendly and pretty apps.
+        Building connections between the brand’s visual identity and consumers.
         <br />
         <br />
         <Link href="/cv" className={s.link}>
