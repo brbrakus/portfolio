@@ -2,7 +2,6 @@ import { h } from 'preact';
 import cc from 'classcat';
 
 import TwitterIcon from 'assets/icons/Twitter.js';
-import DribbleIcon from 'assets/icons/Dribbble.js';
 import GithubIcon from 'assets/icons/Github.js';
 import CodepenIcon from 'assets/icons/Codepen.js';
 
@@ -25,24 +24,13 @@ const SocialNetworkIcons = ({
 
     <a
       className={cc([s.link, linkClassName])}
-      href="https://dribbble.com/BrunaBrakus"
-    >
-      <div className={cc([s.tooltip, tooltipClassName])}>Dribbble</div>
-      <DribbleIcon className={cc([s.icon, iconClassName])} />
-    </a>
-
-    <a
-      className={cc([s.link, linkClassName])}
       href="https://github.com/brbrakus"
     >
       <div className={cc([s.tooltip, tooltipClassName])}>Github</div>
       <GithubIcon className={cc([s.icon, iconClassName])} />
     </a>
 
-    <a
-      className={cc([s.link, linkClassName])}
-      href="https://codepen.io/brunabrakus/"
-    >
+    <a className={cc([s.link, linkClassName])} href="https://codepen.io/brunab">
       <div className={cc([s.tooltip, tooltipClassName])}>Codepen</div>
       <CodepenIcon className={cc([s.icon, iconClassName])} />
     </a>

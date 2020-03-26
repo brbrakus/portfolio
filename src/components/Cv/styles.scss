@@ -73,13 +73,13 @@
   }
 
   .card {
-    width: 18.75rem;
-    padding: $spc-m;
+    width: 19.5rem;
+    padding: $spc-m $spc-m $spc-m $spc-m+$spc-s;
 
     background: $white;
 
     align-self: center;
-    box-shadow: 0px 8px 16px -6px $shadow;
+    box-shadow: 0px 4px 32px -6px $shadow;
     border-radius: $radius-large;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .cardDescription {
-    padding: 0;
+    padding: $spc-s 0;
     border-bottom: 0;
   }
 }

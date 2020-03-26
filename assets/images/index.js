@@ -69,5 +69,35 @@ export default {
     placeholder: require('./avax_logo_placeholder.jpg'),
     src: require('./avax_logo.jpg'),
     alt: 'Royal Marine Croatia logo'
+  },
+  gusar: {
+    placeholder: require('./gusar-placeholder.jpg'),
+    src: require('./gusar.jpg'),
+    alt: 'Gusar logo'
+  },
+  enduro_perun: {
+    placeholder: require('./enduro-perun-placeholder.jpg'),
+    src: require('./enduro-perun.jpg'),
+    alt: 'Enduro Perun'
+  },
+  reel_app: {
+    placeholder: require('./reel-app-placeholder.jpg'),
+    src: require('./reel-app.jpg'),
+    alt: 'Reel app'
+  },
+  reel_back_office: {
+    placeholder: require('./reel-back-office-placeholder.jpg'),
+    src: require('./reel-back-office.jpg'),
+    alt: 'Reel back office'
+  },
+  reel_logo: {
+    placeholder: require('./reel-logo-placeholder.jpg'),
+    src: require('./reel-logo.jpg'),
+    alt: 'Reel logo'
+  },
+  reel_landing_page: {
+    placeholder: require('./reel-lp-placeholder.jpg'),
+    src: require('./reel-lp.jpg'),
+    alt: 'Reel landing page'
   }
 };
