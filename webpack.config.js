@@ -2,7 +2,6 @@ const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OfflinePlugin = require('offline-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'dist');
@@ -59,13 +58,6 @@ module.exports = {
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
     new FaviconsWebpackPlugin('./assets/images/favicon.png'),
-    new MiniCssExtractPlugin(),
-    new OfflinePlugin({
-      caches: {
-        main: ['200.html', 'bundle.js'],
-        additional: [':rest:'],
-        optional: ['*.jpg', '*.mp4']
-      }
-    })
+    new MiniCssExtractPlugin()
   ]
 };
