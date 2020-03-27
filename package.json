@@ -37,7 +37,6 @@
     "lint-staged": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.11.0",
-    "offline-plugin": "^5.0.7",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.7.4",
     "sass-loader": "^8.0.2",
@@ -50,12 +49,10 @@
     "surge": "^0.20.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-critical": "^1.1.1",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "classcat": "^3.2.3",
-    "intersection-observer": "^0.5.1",
     "preact": "^10.3.4",
     "preact-router": "^3.2.1"
   },
