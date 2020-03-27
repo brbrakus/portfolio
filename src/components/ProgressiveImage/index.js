@@ -6,31 +6,21 @@ import s from './styles.scss';
 export default class ProgressiveImage extends Component {
   state = { src: '', loaded: false };
 
-  componentWillUnmount() {
-    this.observer.disconnect();
+  componentWillMount() {
+    this.load();
   }
 
-  handleIntersection = entries => {
-    if (entries.some(entry => !!entry.isIntersecting) && !this.state.loaded) {
-      const { src, placeholder } = this.props;
-      this.fetchImage(placeholder)
-        .then(placeholderSrc => {
-          this.setState({ src: placeholderSrc });
-        })
-        .then(() => this.fetchImage(src))
-        .then(imageSrc => {
-          this.setState({ src: imageSrc, loaded: true });
-        });
-    }
-  };
-
-  observer = new IntersectionObserver(this.handleIntersection, {
-    rootMargin: '100px 0px 0px 0px'
-  });
-
-  observe = el => {
-    if (!el) return;
-    this.observer.observe(el);
+  load = () => {
+    if (this.state.loaded) return;
+    const { src, placeholder } = this.props;
+    this.fetchImage(placeholder)
+      .then(placeholderSrc => {
+        this.setState({ src: placeholderSrc });
+        return this.fetchImage(src);
+      })
+      .then(imageSrc => {
+        this.setState({ src: imageSrc, loaded: true });
+      });
   };
 
   fetchImage = src =>
@@ -43,7 +33,6 @@ export default class ProgressiveImage extends Component {
   render({ className, alt }, { src }) {
     return (
       <img
-        ref={this.observe}
         className={cc([s.image, { [s.loaded]: !!src }, className])}
         alt={alt}
         src={this.state.src}
