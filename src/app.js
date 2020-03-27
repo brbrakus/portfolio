@@ -1,5 +1,6 @@
 import { h, render } from 'preact';
 import Router from 'preact-router';
+import 'lazysizes';
 import Home from 'components/Home';
 import Cv from 'components/Cv';
 
