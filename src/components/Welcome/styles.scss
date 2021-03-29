@@ -57,6 +57,10 @@
   max-width: 34.38rem; // 550px
 }
 
+.icons {
+  margin-top: 2 * $spc-l;
+}
+
 @media screen and (min-width: $small-desktop) {
   .welcome {
     flex-flow: row nowrap;
