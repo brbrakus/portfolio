@@ -99,5 +99,35 @@ export default {
     placeholder: require('./reel-lp-placeholder.jpg').default,
     src: require('./reel-lp.jpg').default,
     alt: 'Reel landing page'
-  }
+  },
+  sugestio_mobile_booking: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./sugestio_mobile_booking.jpg').default,
+    alt: 'Sugestio mobile booking process'
+  },
+  sugestio_mobile_app: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./sugestio_mobile_app.jpg').default,
+    alt: 'Sugestio mobile app'
+  },
+  sugestio_web_app: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./sugestio_web_app.jpg').default,
+    alt: 'Sugestio web app'
+  },
+  rentistic_web_app: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./rentistic_web_app.jpg').default,
+    alt: 'Rentistic web app'
+  },
+  rentistic_component_library: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./rentistic_component_library.jpg').default,
+    alt: 'Rentistic component library'
+  },
+  rentistic_responsive_reservations: {
+    placeholder: require('./reel-lp-placeholder.jpg').default,
+    src: require('./rentistic_responsive_reservations.jpg').default,
+    alt: 'Rentistic responsive reservations'
+  },
 };

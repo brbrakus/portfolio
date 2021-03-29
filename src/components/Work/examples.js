@@ -8,11 +8,9 @@ const rentistic = {
   role: 'Discovery / Product design',
   time: '6 months - ongoing',
   images: [
-    { src: reelVideoUrl, isVideo: true },
-    { src: images.reel_back_office, isVideo: false },
-    { src: images.reel_landing_page, isVideo: false },
-    { src: images.reel_app, isVideo: false },
-    { src: images.reel_logo, isVideo: false }
+    { src: images.rentistic_web_app, isVideo: false },
+    { src: images.rentistic_component_library, isVideo: false },
+    { src: images.rentistic_responsive_reservations, isVideo: false }
   ],
   description: `
   Live bookings and occupancy calendars, price lists and seasons, channel managers for rentals, units and tours is just a part of functionalities that Rentistic is growing. My role is come up with ideas that meet product requirements, provide a good UX and can compete on the market. I’m collaborating on daily basis with stakeholders, project and product managers and team lead to reach the product goals. Also, I’m presenting  business logic through design to the rest of the team as well as collaborating with developers on the design handoff.
@@ -25,11 +23,9 @@ const sugestio = {
   role: 'Discovery / Product design',
   time: '2 months + ongoing per need',
   images: [
-    { src: reelVideoUrl, isVideo: true },
-    { src: images.reel_back_office, isVideo: false },
-    { src: images.reel_landing_page, isVideo: false },
-    { src: images.reel_app, isVideo: false },
-    { src: images.reel_logo, isVideo: false }
+    { src: images.sugestio_mobile_booking, isVideo: false },
+    { src: images.sugestio_mobile_app, isVideo: false },
+    { src: images.sugestio_web_app, isVideo: false }
   ],
   description: `
   Live bookings and occupancy calendars, price lists and seasons, channel managers for rentals, units and tours is just a part of functionalities that Rentistic is growing. My role is come up with ideas that meet product requirements, provide a good UX and can compete on the market. I’m collaborating on daily basis with stakeholders, project and product managers and team lead to reach the product goals. Also, I’m presenting  business logic through design to the rest of the team as well as collaborating with developers on the design handoff.
