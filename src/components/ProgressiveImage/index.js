@@ -7,7 +7,14 @@ export default class ProgressiveImage extends Component {
   state = { src: '', loaded: false };
 
   componentWillMount() {
-    this.load();
+    const { src, placeholder } = this.props;
+    if (!placeholder) {
+      this.fetchImage(src).then(imageSrc => {
+        this.setState({ src: imageSrc, loaded: true });
+      });
+    } else {
+      this.load();
+    }
   }
 
   load = () => {

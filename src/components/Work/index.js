@@ -39,12 +39,14 @@ const Example = ({
         }
       ])}
     >
-      {images.map(image => (
+      {images.map(({ isVideo, src }) => (
         <div className={s.imageContainer}>
-          {image.isVideo ? (
-            <Video src={image.src} />
+          {isVideo ? (
+            <Video src={src} />
           ) : (
-            <ProgressiveImage className={s.exampleImage} {...image.src} />
+            <a target="_blank" href={src.src}>
+              <ProgressiveImage className={s.exampleImage} {...src} />
+            </a>
           )}
         </div>
       ))}
