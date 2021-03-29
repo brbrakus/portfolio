@@ -24,7 +24,7 @@ export default {
   },
   reel_app: {
     placeholder: require('./reel-app-placeholder.jpg').default,
-    src: require('./reel-app.jpg').default,
+    src: require('./reel-mobile-app.jpg').default,
     alt: 'Reel app'
   },
   reel_back_office: {
@@ -32,7 +32,6 @@ export default {
     alt: 'Reel back office'
   },
   reel_logo: {
-    placeholder: require('./reel-logo-placeholder.jpg').default,
     src: require('./reel-logo.jpg').default,
     alt: 'Reel logo'
   },
