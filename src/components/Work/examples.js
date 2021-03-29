@@ -27,9 +27,8 @@ const sugestio = {
     { src: images.sugestio_mobile_app, isVideo: false },
     { src: images.sugestio_web_app, isVideo: false }
   ],
-  description: `
-  Live bookings and occupancy calendars, price lists and seasons, channel managers for rentals, units and tours is just a part of functionalities that Rentistic is growing. My role is come up with ideas that meet product requirements, provide a good UX and can compete on the market. I’m collaborating on daily basis with stakeholders, project and product managers and team lead to reach the product goals. Also, I’m presenting  business logic through design to the rest of the team as well as collaborating with developers on the design handoff.
-  `
+  description: `Sugestio is free tourist guidebook application that provides all the local highlights that accommodation host want to provide.
+My biggest challenge was to define concept for new version functionalities with payment options.  In two months I come up with concepts and solutions that aim to reach the product goals, define specification, prototype and present the design to the stakeholders. I continued working as needed on the improvements for the mobile and web application, building a style guide and redesigning components.`
 };
 
 const reel = {
@@ -45,10 +44,10 @@ const reel = {
     { src: images.reel_app, isVideo: false },
     { src: images.reel_logo, isVideo: false }
   ],
-  description: `
-  Sugestio is free tourist guidebook application that provides all the local highlights that accommodation host want to provide.
-My biggest challenge was to define concept for new version functionalities with payment options.  In two months I come up with concepts and solutions that aim to reach the product goals, define specification, prototype and present the design to the stakeholders. I continued working as needed on the improvements for the mobile and web application, building a style guide and redesigning components.
-  `
+  description: `Condition report system for vehicle rental businesses. The mobile app automates the reporting process and web app allows an agency to track reports and manage their fleet, users and other business entities. Reel application won the 2nd place at the Get in the Ring startup competition in Split, Croatia.
+    <br><br>
+    My role was to help with the idea and design a visual identity, UX and UI for web and mobile apps. I've also implemented a landing page.
+    <br>`
 };
 
 const branding = {
