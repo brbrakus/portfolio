@@ -39,6 +39,7 @@ $tablet-grid-width: calc(2 * #{$tablet-column-width} + #{$grid-gap-big});
 }
 
 .detail {
+  line-height: 1.4;
   align-self: flex-start;
 }
 
