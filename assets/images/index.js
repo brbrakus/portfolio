@@ -6,7 +6,6 @@ export default {
     alt: 'profile-image'
   },
   refuzo: {
-    placeholder: require('./refuzo_placeholder.jpg').default,
     src: require('./refuzo.jpg').default,
     alt: 'Refuzo'
   },
