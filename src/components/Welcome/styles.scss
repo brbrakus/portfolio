@@ -47,7 +47,7 @@
 
 .description {
   width: 100%;
-  margin-bottom: $spc-l;
+  margin-bottom: $spc-xs;
 
   font-size: 1.25rem;
   color: $dark;
@@ -55,11 +55,6 @@
 
   letter-spacing: $letter-spc-s;
   max-width: 34.38rem; // 550px
-}
-
-.link {
-  font-weight: 500;
-  color: $dark;
 }
 
 @media screen and (min-width: $small-desktop) {
@@ -78,5 +73,5 @@
 
   .profilePicture {
     margin-top: 0;
-  }  
+  }
 }
