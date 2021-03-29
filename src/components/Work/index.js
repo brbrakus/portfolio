@@ -6,9 +6,26 @@ import examples from './examples';
 
 import s from './styles.scss';
 
-const Example = ({ example: { images, name, description } }) => (
+const Example = ({
+  example: { images, name, description, role, tools, time }
+}) => (
   <div className={s.work}>
     <h2 className={s.title}>{name}</h2>
+    {role && (
+      <div className={s.detail}>
+        <b className={s.label}>Role:</b> {role}
+      </div>
+    )}
+    {tools && (
+      <div className={s.detail}>
+        <b className={s.label}>Tools:</b> {tools}
+      </div>
+    )}
+    {time && (
+      <div className={s.detail}>
+        <b className={s.label}>Time:</b> {time}
+      </div>
+    )}
     <p
       className={s.description}
       // means to provide links in description data
