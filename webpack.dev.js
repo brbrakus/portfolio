@@ -25,7 +25,6 @@ module.exports = {
       assets: path.resolve(__dirname, 'assets/')
     }
   },
-  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
@@ -58,6 +57,6 @@ module.exports = {
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
     new FaviconsWebpackPlugin('./assets/images/favicon.png'),
-    new MiniCssExtractPlugin('style.css')
+    new MiniCssExtractPlugin({ filename: '[name].css' })
   ]
 };

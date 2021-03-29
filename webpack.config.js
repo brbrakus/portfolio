@@ -25,13 +25,12 @@ module.exports = {
       assets: path.resolve(__dirname, 'assets/')
     }
   },
-  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader', 'eslint-loader'],
-        include: [path.resolve(__dirname, './')]
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: ['babel-loader']
       },
       {
         test: /\.scss$/,
@@ -58,6 +57,8 @@ module.exports = {
     new StyleLintPlugin(),
     new HtmlWebpackPlugin({ filename: '200.html', template: '200.html' }),
     new FaviconsWebpackPlugin('./assets/images/favicon.png'),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    })
   ]
 };
