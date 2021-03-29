@@ -1,7 +1,5 @@
 import images from 'assets/images';
-import adomisVideoUrl from 'assets/images/adomis.mp4';
 import opntVideoUrl from 'assets/images/opnt.mp4';
-import momentumVideoUrl from 'assets/images/momenutm2.mp4';
 import reelVideoUrl from 'assets/images/reel-app.mp4';
 
 export default [
@@ -18,28 +16,6 @@ export default [
     <br><br>
     My role was to help with the idea and design a visual identity, UX and UI for web and mobile apps. I've also implemented a landing page.
     <br>`
-  },
-  {
-    name: 'Momentum',
-    images: [
-      { src: images.momentum1, isVideo: false },
-      { src: momentumVideoUrl, isVideo: true },
-      { src: images.momentum3, isVideo: false }
-    ],
-    description:
-      'Momentum is a modern booking platform with the goal of growing the rental business. As a product designer, I’ve designed the product visual identity, as well as UI design for the product’s CMS and user-facing web application.'
-  },
-  {
-    name: 'UX & UI Design',
-    images: [
-      { src: images.monthly_budget, isVideo: false },
-      { src: images.avax_web, isVideo: false },
-      { src: images.enduro_perun, isVideo: false },
-      { src: adomisVideoUrl, isVideo: true },
-      { src: images.augusta, isVideo: false }
-    ],
-    description:
-      'I provided a solution for the modern budgeting application "Monthly Budget". In the need for presentational web sites, I also worked for clients such as restaurant and accommodation Augusta Insula, Astronomical Society of Omiš, Avax rent a car, Enduro Perun...<br /> '
   },
   {
     name: 'Branding and digital marketing',
