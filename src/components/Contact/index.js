@@ -45,7 +45,7 @@ const Contact = () => (
         Say hi!
       </button>
     </form>
-    <SocialNetworkIcons />
+    <SocialNetworkIcons className={s.icons} />
   </div>
 );
 export default Contact;
