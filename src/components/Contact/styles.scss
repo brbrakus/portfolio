@@ -99,7 +99,7 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover, &:focus {
     margin-top: $spc-s;
     margin-bottom: 0.0625rem;
 
