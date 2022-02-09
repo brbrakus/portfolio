@@ -33,7 +33,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "mini-css-extract-plugin": "^1.4.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.7.4",
     "sass-loader": "^11.0.1",
